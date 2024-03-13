@@ -1,0 +1,1 @@
+"git diff" komutu ile değişiklik yapılan dosyaların içindeki değişiklikler görülebilir
