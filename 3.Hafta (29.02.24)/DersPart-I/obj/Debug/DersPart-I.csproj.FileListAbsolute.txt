@@ -1,0 +1,10 @@
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\bin\Debug\DersPart-I.exe.config
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\bin\Debug\DersPart-I.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\bin\Debug\DersPart-I.pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart-I.csproj.AssemblyReference.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart_I.Form1.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart_I.Properties.Resources.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart-I.csproj.GenerateResource.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart-I.csproj.CoreCompileInputs.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart-I.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\3.Hafta\DersPart-I\obj\Debug\DersPart-I.pdb

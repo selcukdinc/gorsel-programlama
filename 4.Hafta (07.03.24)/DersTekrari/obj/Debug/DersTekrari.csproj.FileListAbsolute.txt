@@ -1,0 +1,11 @@
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\bin\Debug\DersTekrari.exe.config
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\bin\Debug\DersTekrari.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\bin\Debug\DersTekrari.pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.csproj.AssemblyReference.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.Form1.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.Properties.Resources.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.Secenekler.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.csproj.GenerateResource.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.csproj.CoreCompileInputs.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\4.Hafta\DersTekrari\obj\Debug\DersTekrari.pdb
