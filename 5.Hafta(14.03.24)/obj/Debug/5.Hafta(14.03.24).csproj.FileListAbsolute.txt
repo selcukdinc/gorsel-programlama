@@ -1,0 +1,12 @@
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\bin\Debug\5.Hafta(14.03.24).exe.config
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\bin\Debug\5.Hafta(14.03.24).exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\bin\Debug\5.Hafta(14.03.24).pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\5.Hafta(14.03.24).csproj.AssemblyReference.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Form1.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Properties.Resources.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\5.Hafta(14.03.24).csproj.GenerateResource.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\5.Hafta(14.03.24).csproj.CoreCompileInputs.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\5.Hafta(14.03.24).exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\5.Hafta(14.03.24).pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Odev2.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Form2.resources
