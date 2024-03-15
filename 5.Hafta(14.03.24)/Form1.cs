@@ -48,9 +48,9 @@ namespace _5.Hafta_14._03._24_
             imgList.ColorDepth = ColorDepth.Depth32Bit;
             imgList.ImageSize = new Size(32, 32);
             // 3 farklı şekilde resimler alınabilir
-            imgList.Images.Add(Image.FromFile(@".\images\ekle.png"));
-            imgList.Images.Add(new Bitmap(@".\images\iptal.png"));
-            imgList.Images.Add(Bitmap.FromFile(@".\images\ekle.png"));
+            imgList.Images.Add(Image.FromFile(@".\images\ekle.ico"));
+            imgList.Images.Add(new Bitmap(@".\images\iptal.ico"));
+            imgList.Images.Add(Bitmap.FromFile(@".\images\sil.ico"));
 
             btnCilgin.ImageList = imgList;
             btnCilgin.ImageIndex = 0;

@@ -58,11 +58,23 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Odev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odev1.Designer.cs">
+      <DependentUpon>Odev1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Odev2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Odev2.Designer.cs">
       <DependentUpon>Odev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odev3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odev3.Designer.cs">
+      <DependentUpon>Odev3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +84,14 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Odev1.resx">
+      <DependentUpon>Odev1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Odev2.resx">
       <DependentUpon>Odev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odev3.resx">
+      <DependentUpon>Odev3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\shape1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

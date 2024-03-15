@@ -16,7 +16,7 @@ namespace _5.Hafta_14._03._24_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Odev1());
         }
         /*
          *  - Buton Özellikleri arasında -
@@ -58,6 +58,7 @@ namespace _5.Hafta_14._03._24_
          * ödev 3
          *          text box ile tc kimlik numarasını kontrol eden 
          *          text box'a sadece sayı girilebilecek, ve 11 haneli sayı girildikten sonra girilen sayının tc kimlik no olup olmadığı kontrol edilecek
+         *          Sonrasında bir bilgi ekranı ile bilgi verilecek
          *          
          */
     }
