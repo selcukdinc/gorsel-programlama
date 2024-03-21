@@ -14,7 +14,13 @@
   - git fetch https://github.com/selcukdinc/gorsel-programlama.git
   - yazın ve enter'layın 
   bütün dosyaları yeniden yüklemeden sadece güncelleme gereken ve yeni eklenmiş dosyalar indirilir
-    
+  
+.  
+** 6. Hafta (21.03.2024) ** 
+    Combobox'lar işlenildi  
+    1 adet ödev verildi (yapılması zorunlu değil)  
+      form1.cs'de comboBox2_SelectedIndexChanged metodunun içinde derste int tipinde index çekilip yapılmıştı, şimdi string ifade çekilip kullanarak yapılması gerekiyor.
+   
  .                            
   ** 5. Hafta (14.03.2024)  **
      -  3 adet ödev verildi (Yapılması zorunlu değil)
