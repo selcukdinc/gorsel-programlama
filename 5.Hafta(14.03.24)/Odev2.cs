@@ -15,6 +15,9 @@ namespace _5.Hafta_14._03._24_
         public Odev2()
         {
             InitializeComponent();
+            int barSizeY = this.Height - this.ClientSize.Height, barSizeX = this.Width - this.ClientSize.Width;
+            this.MinimizeBox = false; this.MaximizeBox = false; this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.Width = 100 + 8 * 50 + barSizeX; this.Height = 8 * 50 + barSizeY;
         }
 
         /* ödev 2, 
@@ -30,6 +33,7 @@ namespace _5.Hafta_14._03._24_
         enum ZeminRenk
         {
             Siyah, Beyaz
+
         }
         ZeminRenk rnk = ZeminRenk.Beyaz;
 
@@ -38,9 +42,9 @@ namespace _5.Hafta_14._03._24_
             button1.Enabled = false;
             //int frmEn = this.ClientSize.Width, frmBoy = this.ClientSize.Height, btnEn = btnNew.Width, btnBoy = btnNew.Height;
             // btnNew.Location = new Point(rnd2.Next(0, frmEn - btnEn), rnd2.Next(0, frmBoy - btnBoy));
-            int barSizeY = this.Height - this.ClientSize.Height, barSizeX = this.Width - this.ClientSize.Width;
-            this.MinimizeBox = false; this.MaximizeBox = false; this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            this.Width = 100 + 8 * 50+barSizeX; this.Height = 8*50+barSizeY;
+            //int barSizeY = this.Height - this.ClientSize.Height, barSizeX = this.Width - this.ClientSize.Width;
+            //this.MinimizeBox = false; this.MaximizeBox = false; this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            //this.Width = 100 + 8 * 50+barSizeX; this.Height = 8*50+barSizeY;
             int Xlokasyonu = 100, Ylokasyonu = 0, sayac = 1;
             for (int i = 0; i < 8; i++)
             {
