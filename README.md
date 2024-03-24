@@ -28,16 +28,20 @@
   Ödev1:  
         Farklı şekillerde buton, flowchartta olduğu gibi butonları  
         butona tıkladın, çizgiyi geçtiği an o butondan eklenecek  
-        butonlar çoğaltılmış olacak
+        butonlar çoğaltılmış olacak, artık butonlar sonradan hareket ettirilebiliyor!  
+        <br>
+        ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/5.Hafta(14.03.24)/images/Btns.gif?raw=true)
+        
             
   Ödev2:  
         butona tıklanıldığı zaman,  
         formun x noktasındaki 100'den sonrasına butonlar oluşturulacak,  
         8x8 adet buton oluşturulacak,  
         üstlerinde 1'den 64'e yazılar yazılacak  
-        satranç tahtası gibi siyah ve bayaz renklerinden oluşturulacak
-       
-  Ödev3:  
+        satranç tahtası gibi siyah ve bayaz renklerinden oluşturulacak  
+        <br>
+       ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/5.Hafta(14.03.24)/images/Strnc.gif?raw=true)
+  <br>Ödev3:  
         text box ile tc kimlik numarasını kontrol eden   
         text box'a sadece sayı girilebilecek,  
         11 haneli sayı girildikten sonra girilen sayının tc kimlik no olup olmadığı kontrol edilecek  
