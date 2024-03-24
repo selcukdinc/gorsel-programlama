@@ -18,6 +18,7 @@ namespace _5.Hafta_14._03._24_
         * Ödev1:Farklı şekillerde buton, flowchartta olduğu gibi butonlar eklenebilecek,
         * butona tıkladın, çizgiyi geçtiği an o butondan eklenecek
         * butonlar çoğaltılmış olacak
+        * Edit1: Butonlar artık hareket ettiriliebiliyorlar
         */
         #region Ödevin Cevabı
         public Odev1()
@@ -41,21 +42,23 @@ namespace _5.Hafta_14._03._24_
             Target[Sayac].Location = Source.Location;
         }
 
-        System.Windows.Forms.Button[] WhlBtns = new System.Windows.Forms.Button[0];
-        int btnWhileSyc = 0;
-        System.Windows.Forms.Button[] IfBtns = new System.Windows.Forms.Button[0];
-        int btnifSayac = 0;
-        System.Windows.Forms.Button[] ForBtns = new System.Windows.Forms.Button[0];
-        int btnforSayac = 0;
+        Button[] WhlBtns = new Button[0]; int btnWhileSyc = 0;  int WhlSecilen = 0;
+        Button[] IfBtns = new Button[0];  int btnifSayac = 0;   int IfSecilen = 0;
+        Button[] ForBtns = new Button[0]; int btnforSayac = 0;  int ForSecilen = 0;
 
-        #region WhileBtn
+        // int[] Xkonum = new int[0];
+        // int[] Ykonum = new int[0];
 
         Point WhlKonum, WhlilkKonum;
+        Point Ifkonum, Ifilkkonum;
+        Point ForKonum, ForilkKonum;
+
+        #region WhileBtn
         private void btnWhile_MouseDown(object sender, MouseEventArgs e)
         {
             WhlKonum = e.Location;
         }
-
+        
         private void btnWhile_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -72,15 +75,46 @@ namespace _5.Hafta_14._03._24_
                 Array.Resize(ref WhlBtns, btnWhileSyc+1);
                 OzMiras( btnWhile, ref WhlBtns, btnWhileSyc);
                 this.Controls.Add(WhlBtns[btnWhileSyc]);
-                btnWhile.Location = WhlilkKonum;
+                // Array.Resize(ref Xkonum, btnWhileSyc + 1);
+                // Array.Resize(ref Ykonum, btnWhileSyc + 1);
+                // Xkonum[btnWhileSyc] = btnWhile.Location.X;
+                // Ykonum[btnWhileSyc] = btnWhile.Location.Y;
+                btnWhile.Location = WhlilkKonum;  
+                this.WhlBtns[btnWhileSyc].MouseDown += new System.Windows.Forms.MouseEventHandler(this.WhileButtons_MouseDown);
+                this.WhlBtns[btnWhileSyc].MouseMove += new System.Windows.Forms.MouseEventHandler(this.WhileButtons_MouseMove);
                 btnWhileSyc++;
-            }else btnWhile.Location = WhlilkKonum;
+            }
+            else 
+                btnWhile.Location = WhlilkKonum;
+        }
+
+        private void WhileButtons_MouseDown(object sender, MouseEventArgs e)
+        {
+            for (int i = 0; i < WhlBtns.Length; i++)
+            {
+                Point ptCursor = Cursor.Position;
+                ptCursor = PointToClient(ptCursor);
+                if (WhlBtns[i].Bounds.Contains(ptCursor))
+                {
+                    WhlSecilen = i;
+                    break;
+                }
+            }
+            WhlKonum = e.Location; // *
+        }
+
+        private void WhileButtons_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.WhlBtns[WhlSecilen].Left += e.X - (WhlKonum.X); // *
+                this.WhlBtns[WhlSecilen].Top += e.Y - (WhlKonum.Y); // *
+            }
         }
         #endregion
 
         #region IfBtn
 
-        Point Ifkonum, Ifilkkonum;
         private void btnIf_MouseDown(object sender, MouseEventArgs e)
         {
             Ifkonum = e.Location;
@@ -99,22 +133,43 @@ namespace _5.Hafta_14._03._24_
             
             if (btnIf.Location.X + btnIf.Width > pictureBox1.Width + btnIf.Width)
             {
-                Array.Resize(ref IfBtns, btnifSayac+1);
-                OzMiras(btnIf,ref IfBtns, btnifSayac);
+                Array.Resize(ref IfBtns, btnifSayac + 1);
+                OzMiras(btnIf, ref IfBtns, btnifSayac);
                 this.Controls.Add(IfBtns[btnifSayac]);
                 btnIf.Location = Ifilkkonum;
+                this.IfBtns[btnifSayac].MouseDown += new System.Windows.Forms.MouseEventHandler(this.IfButtons_MouseDown);
+                this.IfBtns[btnifSayac].MouseMove += new System.Windows.Forms.MouseEventHandler(this.IfButtons_MouseMove);
                 btnifSayac++;
             }
             else
+                btnIf.Location = Ifilkkonum;   
+        }
+        private void IfButtons_MouseDown(object sender, MouseEventArgs e)
+        {
+            for (int i = 0; i < IfBtns.Length; i++)
             {
-                btnIf.Location = Ifilkkonum;
+                Point ptCursor = Cursor.Position;
+                ptCursor = PointToClient(ptCursor);
+                if (IfBtns[i].Bounds.Contains(ptCursor))
+                {
+                    IfSecilen = i;
+                    break;
+                }
+            }
+            Ifkonum = e.Location; // *
+        }
+
+        private void IfButtons_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.IfBtns[IfSecilen].Left += e.X - (Ifkonum.X); // *
+                this.IfBtns[IfSecilen].Top += e.Y - (Ifkonum.Y); // *
             }
         }
         #endregion
 
         #region ForBtn
-
-        Point ForKonum, ForilkKonum;
 
         private void btnFor_MouseDown(object sender, MouseEventArgs e)
         {
@@ -138,9 +193,35 @@ namespace _5.Hafta_14._03._24_
                 OzMiras(btnFor, ref ForBtns, btnforSayac);
                 this.Controls.Add(ForBtns[btnforSayac]);
                 btnFor.Location = ForilkKonum;
+                this.ForBtns[btnforSayac].MouseDown += new System.Windows.Forms.MouseEventHandler(this.ForButtons_MouseDown);
+                this.ForBtns[btnforSayac].MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForButtons_MouseMove);
                 btnforSayac++;
             }
             else btnFor.Location = ForilkKonum;
+        }
+
+        private void ForButtons_MouseDown(object sender, MouseEventArgs e)
+        {
+            for (int i = 0; i < ForBtns.Length; i++)
+            {
+                Point ptCursor = Cursor.Position;
+                ptCursor = PointToClient(ptCursor);
+                if (ForBtns[i].Bounds.Contains(ptCursor))
+                {
+                    ForSecilen = i;
+                    break;
+                }
+            }
+            ForKonum = e.Location; // *
+        }
+
+        private void ForButtons_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.ForBtns[ForSecilen].Left += e.X - (ForKonum.X); // *
+                this.ForBtns[ForSecilen].Top += e.Y - (ForKonum.Y); // *
+            }
         }
         #endregion
 

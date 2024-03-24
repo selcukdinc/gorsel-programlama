@@ -131,5 +131,7 @@ namespace _5.Hafta_14._03._24_
             textBox3.BackColor = Color.White;
             textBox3.ForeColor = Color.Black;
         }
+
+       
     }
 }
