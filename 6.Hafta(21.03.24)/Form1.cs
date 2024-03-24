@@ -83,6 +83,8 @@ namespace _6.Hafta_21._03._24_
             comboBox2.Items.Add("Çıkarma");
             comboBox2.Items.Add("Bölme");
             comboBox2.Items.Add("çarpma");
+            txbBirinci.Text = "0";
+            txbİkinci.Text = "0";
             // fonksiyonun içine aktarılması tercih edilir
 
             illerOku();
@@ -111,22 +113,31 @@ namespace _6.Hafta_21._03._24_
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(txbBirinci.Text);int  b = Convert.ToInt32(txbİkinci.Text);
-            int secim = comboBox2.SelectedIndex;
-            switch (secim)
+            //int a = Convert.ToInt32(txbBirinci.Text);int  b = Convert.ToInt32(txbİkinci.Text);
+            //int secim = comboBox2.SelectedIndex;
+            //switch (secim)
+            //{
+            //    case 0:
+            //        txbSonuc.Text = $"{a + b}";
+            //        break;
+            //    case 1:
+            //        txbSonuc.Text = $"{a - b}";
+            //        break;
+            //    case 2:
+            //        txbSonuc.Text = $"{(double)a / b}";
+            //        break;
+            //    case 3:
+            //        txbSonuc.Text = $"{a * b}";
+            //        break;
+            //}
+            int a = Convert.ToInt32(txbBirinci.Text); int b = Convert.ToInt32(txbİkinci.Text);
+            string secilen = comboBox2.Text;   
+            switch (secilen)
             {
-                case 0:
-                    txbSonuc.Text = $"{a + b}";
-                    break;
-                case 1:
-                    txbSonuc.Text = $"{a - b}";
-                    break;
-                case 2:
-                    txbSonuc.Text = $"{(double)a / b}";
-                    break;
-                case 3:
-                    txbSonuc.Text = $"{a * b}";
-                    break;
+                case "Toplama": txbSonuc.Text = $"{(double)a + b}"; break;
+                case "Çıkarma": txbSonuc.Text = $"{(double)a - b}"; break;
+                case "Bölme": txbSonuc.Text = $"{(double)a / b}"; break;
+                case "çarpma": txbSonuc.Text = $"{(double)a * b}"; break;
             }
         }
 
