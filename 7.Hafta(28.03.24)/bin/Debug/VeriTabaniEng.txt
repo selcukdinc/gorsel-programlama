@@ -1,0 +1,4 @@
+Watch;Saat
+Pencil;Kalem
+Keyboard;Klavye
+Application;Uygulama
