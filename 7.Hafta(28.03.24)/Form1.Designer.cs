@@ -41,14 +41,15 @@
             this.lbAsal = new System.Windows.Forms.ListBox();
             this.lbDogrula = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbDogrula = new System.Windows.Forms.TextBox();
             this.btnAsalBul = new System.Windows.Forms.Button();
-            this.btnAsalCarpanlar = new System.Windows.Forms.Button();
+            this.btnDogrula = new System.Windows.Forms.Button();
             this.rbtTr = new System.Windows.Forms.RadioButton();
             this.rbtEn = new System.Windows.Forms.RadioButton();
             this.btnBul = new System.Windows.Forms.Button();
             this.lblKelimeler = new System.Windows.Forms.ListBox();
             this.txtKelimeAra = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbMain
@@ -176,13 +177,15 @@
             this.textBox1.Size = new System.Drawing.Size(153, 23);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "45";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // tbDogrula
             // 
-            this.textBox2.Location = new System.Drawing.Point(543, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 23);
-            this.textBox2.TabIndex = 13;
+            this.tbDogrula.Location = new System.Drawing.Point(543, 12);
+            this.tbDogrula.Name = "tbDogrula";
+            this.tbDogrula.Size = new System.Drawing.Size(153, 23);
+            this.tbDogrula.TabIndex = 13;
+            this.tbDogrula.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbDogrula_KeyDown);
             // 
             // btnAsalBul
             // 
@@ -194,20 +197,20 @@
             this.btnAsalBul.UseVisualStyleBackColor = true;
             this.btnAsalBul.Click += new System.EventHandler(this.btnAsalBul_Click);
             // 
-            // btnAsalCarpanlar
+            // btnDogrula
             // 
-            this.btnAsalCarpanlar.Location = new System.Drawing.Point(543, 246);
-            this.btnAsalCarpanlar.Name = "btnAsalCarpanlar";
-            this.btnAsalCarpanlar.Size = new System.Drawing.Size(153, 23);
-            this.btnAsalCarpanlar.TabIndex = 15;
-            this.btnAsalCarpanlar.Text = "Doğrula";
-            this.btnAsalCarpanlar.UseVisualStyleBackColor = true;
-            this.btnAsalCarpanlar.Click += new System.EventHandler(this.btnAsalCarpanlar_Click);
+            this.btnDogrula.Location = new System.Drawing.Point(543, 246);
+            this.btnDogrula.Name = "btnDogrula";
+            this.btnDogrula.Size = new System.Drawing.Size(153, 23);
+            this.btnDogrula.TabIndex = 15;
+            this.btnDogrula.Text = "Doğrula";
+            this.btnDogrula.UseVisualStyleBackColor = true;
+            this.btnDogrula.Click += new System.EventHandler(this.btnAsalCarpanlar_Click);
             // 
             // rbtTr
             // 
             this.rbtTr.AutoSize = true;
-            this.rbtTr.Location = new System.Drawing.Point(782, 250);
+            this.rbtTr.Location = new System.Drawing.Point(745, 250);
             this.rbtTr.Name = "rbtTr";
             this.rbtTr.Size = new System.Drawing.Size(41, 19);
             this.rbtTr.TabIndex = 16;
@@ -219,7 +222,7 @@
             // rbtEn
             // 
             this.rbtEn.AutoSize = true;
-            this.rbtEn.Location = new System.Drawing.Point(860, 248);
+            this.rbtEn.Location = new System.Drawing.Point(857, 250);
             this.rbtEn.Name = "rbtEn";
             this.rbtEn.Size = new System.Drawing.Size(41, 19);
             this.rbtEn.TabIndex = 17;
@@ -230,7 +233,7 @@
             // 
             // btnBul
             // 
-            this.btnBul.Location = new System.Drawing.Point(772, 275);
+            this.btnBul.Location = new System.Drawing.Point(745, 275);
             this.btnBul.Name = "btnBul";
             this.btnBul.Size = new System.Drawing.Size(153, 23);
             this.btnBul.TabIndex = 18;
@@ -242,31 +245,42 @@
             // 
             this.lblKelimeler.FormattingEnabled = true;
             this.lblKelimeler.ItemHeight = 15;
-            this.lblKelimeler.Location = new System.Drawing.Point(772, 41);
+            this.lblKelimeler.Location = new System.Drawing.Point(745, 41);
             this.lblKelimeler.Name = "lblKelimeler";
             this.lblKelimeler.Size = new System.Drawing.Size(153, 199);
             this.lblKelimeler.TabIndex = 19;
             // 
             // txtKelimeAra
             // 
-            this.txtKelimeAra.Location = new System.Drawing.Point(772, 12);
+            this.txtKelimeAra.Location = new System.Drawing.Point(745, 12);
             this.txtKelimeAra.Name = "txtKelimeAra";
             this.txtKelimeAra.Size = new System.Drawing.Size(153, 23);
             this.txtKelimeAra.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(378, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Ödev 2";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 516);
+            this.ClientSize = new System.Drawing.Size(337, 398);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtKelimeAra);
             this.Controls.Add(this.lblKelimeler);
             this.Controls.Add(this.btnBul);
             this.Controls.Add(this.rbtEn);
             this.Controls.Add(this.rbtTr);
-            this.Controls.Add(this.btnAsalCarpanlar);
+            this.Controls.Add(this.btnDogrula);
             this.Controls.Add(this.btnAsalBul);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbDogrula);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbDogrula);
             this.Controls.Add(this.lbAsal);
@@ -305,14 +319,15 @@
         private System.Windows.Forms.ListBox lbAsal;
         private System.Windows.Forms.ListBox lbDogrula;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbDogrula;
         private System.Windows.Forms.Button btnAsalBul;
-        private System.Windows.Forms.Button btnAsalCarpanlar;
+        private System.Windows.Forms.Button btnDogrula;
         private System.Windows.Forms.RadioButton rbtTr;
         private System.Windows.Forms.RadioButton rbtEn;
         private System.Windows.Forms.Button btnBul;
         private System.Windows.Forms.ListBox lblKelimeler;
         private System.Windows.Forms.TextBox txtKelimeAra;
+        private System.Windows.Forms.Button button1;
     }
 }
 

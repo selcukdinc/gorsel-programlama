@@ -22,6 +22,8 @@ namespace _7.Hafta_28._03._24_
         {
             lbMain.SelectionMode = SelectionMode.MultiExtended;
             rbtTr.Checked = true;
+            // btnAsalBul.Visible = false;
+            // lbAsal.Visible = false;
         }
 
         string[] Kelimeler;
@@ -34,7 +36,6 @@ namespace _7.Hafta_28._03._24_
             foreach (var item in Kelimeler)
             {
                 bolunmusKelimeler = item.Split(';');
-
                 lblKelimeler.Items.Add(bolunmusKelimeler[secilen]);
             }
         }
@@ -119,7 +120,7 @@ namespace _7.Hafta_28._03._24_
                 if (lbMain.FindString(txtAra.Text, deger) > -1)
                 {
                     lbMain.SelectedIndex = -1;
-                    
+
                     //deger = lbMain.FindString(txtAra.Text, deger);
                     //if (deger >= 0)
                     //{
@@ -131,6 +132,18 @@ namespace _7.Hafta_28._03._24_
                         deger = lbMain.FindString(txtAra.Text, deger);
                         lbMain.SelectedIndex = deger;
                     }
+                    else
+                    {
+                        DialogResult dr = MessageBox.Show("Başa dönülsün mü ?","Son kelimeye gelindi",MessageBoxButtons.YesNo);
+                        if (dr == DialogResult.Yes)
+                        {
+                            deger = 0;
+                        }
+                        else 
+                            lbMain.SelectedIndex = deger;
+                    }
+
+                        
                 }
             }
             /*
@@ -189,12 +202,27 @@ namespace _7.Hafta_28._03._24_
 
         private void btnAsalCarpanlar_Click(object sender, EventArgs e)
         {
-            int carpim = 1;
+            btnAsalBul.PerformClick();
+            int carpim = 1, girilenDeg = 1;
             for (int i = 0; i < lbAsal.Items.Count; i++)
             {
                 carpim *= (int)lbAsal.Items[i];
             }
-            textBox2.Text = $"{carpim}";
+            // tbDogrula.Text = $"{carpim}";
+            for (int i = 0; i < lbDogrula.Items.Count; i++)
+            {
+                girilenDeg *= Convert.ToInt32(lbDogrula.Items[i]);
+            }
+            if (girilenDeg == carpim)
+            {
+                btnDogrula.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                btnDogrula.BackColor = Color.LightSalmon;
+            }
+            // lbAsal.Visible = true;
+            // btnAsalBul.Visible = true;
         }
 
         private void rbtEn_CheckedChanged(object sender, EventArgs e)
@@ -217,6 +245,28 @@ namespace _7.Hafta_28._03._24_
                 MessageBox.Show($"{item}");
             }
 
+        }
+
+        private void tbDogrula_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                lbDogrula.Items.Add(tbDogrula.Text);
+                tbDogrula.Text = "";
+            }
+    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Odev2 frm = new Odev2();
+            frm.ShowDialog();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            lbAsal.Items.Clear();
+            lbDogrula.Items.Clear();
+            btnDogrula.BackColor = Color.White;
         }
     }
 }
