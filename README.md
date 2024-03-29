@@ -1,20 +1,24 @@
 ** 7. Hafta (28.03.2024) ** 
     Listboxlar işlendi 
     <br><br>
-    ödev1: sonraki tuşuna bastıktan sonra son seçime gelinmişse seçim işlemi tekrar başa dönmeli, 
+    ödev1: sonraki tuşuna bastıktan sonra son seçime gelinmişse seçim işlemi tekrar başa dönmeli,<br><br>
+    ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/7.Hafta(28.03.24)/images/Odev1.gif?raw=true)
     <br><br>
     ödev2: <br>birinci sayı (label) : textbox
     ikinci sayı (label) : textbox
     listbox1 : buton ve textbox'ları listele
     listbox2 : Taborder'i gösteren liste olacak
     "aktar; taborderi düzenle" isimlerinde butonlar olacak
-    tabroder'a basıldıktan sonra taborderdaki ilk elemana focus atılacak
-    <br><br>
+    tabroder'a basıldıktan sonra taborderdaki ilk elemana focus atılacak<br>
+    ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/7.Hafta(28.03.24)/images/Odev2.gif?raw=true)
+    <br>
     ödev3:
     asal çarpan kontrolü yapılacak,<br>
     asalçarpanları kullanıcı ikinci listbox'a ekleyecek, <br>
     doğrula butonuna basıldığında ise kullanıcı doğru çarpanları girdiyse butonun arka plan rengini yeşil <br> 
-    kullanıcı yanlış çarpanları girdiyse butonun arka plan rengini kırmızı yapacak <br><br><br>
+    kullanıcı yanlış çarpanları girdiyse butonun arka plan rengini kırmızı yapacak<br><br>
+    ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/7.Hafta(28.03.24)/images/Odev3.gif?raw=true)
+    <br><br>
 ** 6. Hafta (21.03.2024) ** 
     Combobox'lar işlenildi  
     1 adet ödev verildi (yapılması zorunlu değil)  
