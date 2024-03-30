@@ -16,5 +16,7 @@ namespace _5.Hafta_14._03._24_
         {
             InitializeComponent();
         }
+
+        
     }
 }

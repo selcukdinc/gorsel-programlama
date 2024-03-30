@@ -27,6 +27,7 @@ namespace _5.Hafta_14._03._24_
             Ifilkkonum = new Point(btnIf.Left, btnIf.Top);
             WhlilkKonum = new Point(btnWhile.Left, btnWhile.Top);
             ForilkKonum = new Point(btnFor.Left, btnFor.Top);
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         public static void OzMiras( System.Windows.Forms.Button Source, ref System.Windows.Forms.Button[] Target, int Sayac)
@@ -184,6 +185,7 @@ namespace _5.Hafta_14._03._24_
                 btnFor.Top += e.Y - (ForKonum.Y);
             }
         }
+
 
         private void btnFor_MouseUp(object sender, MouseEventArgs e)
         {

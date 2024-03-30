@@ -15,6 +15,7 @@ namespace _5.Hafta_14._03._24_
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -132,6 +133,9 @@ namespace _5.Hafta_14._03._24_
             textBox3.ForeColor = Color.Black;
         }
 
-       
+        private void btnCilgin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

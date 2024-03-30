@@ -100,6 +100,7 @@
             this.btnCilgin.TabIndex = 11;
             this.btnCilgin.Text = "Tıkla tıklayabilirsen";
             this.btnCilgin.UseVisualStyleBackColor = true;
+            this.btnCilgin.Click += new System.EventHandler(this.btnCilgin_Click);
             this.btnCilgin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnCilgin_MouseMove);
             // 
             // button3

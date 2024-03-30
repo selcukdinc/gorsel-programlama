@@ -12,3 +12,4 @@ C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Form2.resources
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Odev1.resources
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.Odev3.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\5.Hafta(14.03.24)\obj\Debug\_5.Hafta_14._03._24_.AnaMenu.resources

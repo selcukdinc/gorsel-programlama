@@ -16,7 +16,7 @@ namespace _5.Hafta_14._03._24_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Odev2());
+            Application.Run(new AnaMenu());
         }
         /*
          *  - Buton Özellikleri arasında -

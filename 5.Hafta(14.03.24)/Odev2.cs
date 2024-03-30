@@ -18,6 +18,7 @@ namespace _5.Hafta_14._03._24_
             int barSizeY = this.Height - this.ClientSize.Height, barSizeX = this.Width - this.ClientSize.Width;
             this.MinimizeBox = false; this.MaximizeBox = false; this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             this.Width = 100 + 8 * 50 + barSizeX; this.Height = 8 * 50 + barSizeY;
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         /* ödev 2, 

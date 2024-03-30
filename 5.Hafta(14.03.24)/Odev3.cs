@@ -16,6 +16,7 @@ namespace _5.Hafta_14._03._24_
         public Odev3()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         /*
