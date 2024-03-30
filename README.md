@@ -25,6 +25,8 @@
       form1.cs'de comboBox2_SelectedIndexChanged metodunun içinde derste int tipinde index çekilip yapılmıştı, şimdi string ifade çekilip kullanılarak yapılması gerekiyor.
       <br><br><br>
   ** 5. Hafta (14.03.2024)  **
+     -  Anamenü eklendi, bu sayede formlara arası geçiş kolaylaştırıldı<br><br>
+     ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/5.Hafta(14.03.24)/images/AnaMenu.png?raf=true)<br><br>
      -  3 adet ödev verildi (Yapılması zorunlu değil)
      <br><br>
   Ödev1:  
