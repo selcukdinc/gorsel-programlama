@@ -76,10 +76,6 @@ namespace _5.Hafta_14._03._24_
                 Array.Resize(ref WhlBtns, btnWhileSyc+1);
                 OzMiras( btnWhile, ref WhlBtns, btnWhileSyc);
                 this.Controls.Add(WhlBtns[btnWhileSyc]);
-                // Array.Resize(ref Xkonum, btnWhileSyc + 1);
-                // Array.Resize(ref Ykonum, btnWhileSyc + 1);
-                // Xkonum[btnWhileSyc] = btnWhile.Location.X;
-                // Ykonum[btnWhileSyc] = btnWhile.Location.Y;
                 btnWhile.Location = WhlilkKonum;  
                 this.WhlBtns[btnWhileSyc].MouseDown += new System.Windows.Forms.MouseEventHandler(this.WhileButtons_MouseDown);
                 this.WhlBtns[btnWhileSyc].MouseMove += new System.Windows.Forms.MouseEventHandler(this.WhileButtons_MouseMove);
