@@ -19,13 +19,158 @@ namespace _10.Hafta_18._04._24_
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            richTextBox1.ZoomFactor = trackBar1.Value;
+            rtbMetin.ZoomFactor = tbMetinBoyut.Value;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            progressBar1.Value = 50;
-            //progressBar1.Value += 12;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string saat = DateTime.Now.ToLongTimeString();
+            toolStripStatusLabel2.Text = $"saat: {saat}";
+            toolStripProgressBar1.Value = DateTime.Now.Second;
+            //TimeSpan ts = new TimeSpan(dt,2,3);
+
+        }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            FontDialog fd = new FontDialog();
+            if (fd.ShowDialog() == DialogResult.OK)
+                rtbMetin.SelectionFont = fd.Font;
+        }
+
+        private void btnArkaRenk_Click(object sender, EventArgs e)
+        {
+            ColorDialog cd = new ColorDialog();
+            if (cd.ShowDialog() == DialogResult.OK)
+                rtbMetin.SelectionBackColor = cd.Color;
+        }
+
+        private void btnSecilenGoster_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(rtbMetin.SelectedText,"Seçilen metin");
+        }
+
+        private void MetniHizala(object sender, EventArgs e)
+        {
+            RadioButton rdbtn = (RadioButton)sender;
+            switch (rdbtn.Name)
+            {
+                case "rdbOrta":
+                    if (rtbMetin.SelectedText != String.Empty)
+                        rtbMetin.SelectionAlignment = HorizontalAlignment.Center;
+                    else
+                    {
+                        rtbMetin.SelectAll();
+                        rtbMetin.SelectionAlignment = HorizontalAlignment.Center;
+                    }
+                    break;
+                case "rdbSag":
+                    if (rtbMetin.SelectedText != String.Empty)
+                        rtbMetin.SelectionAlignment = HorizontalAlignment.Right;
+                    else
+                    {
+                        rtbMetin.SelectAll();
+                        rtbMetin.SelectionAlignment = HorizontalAlignment.Right;
+                    }
+                    break;
+                case "rdbSol":
+                    if (rtbMetin.SelectedText != String.Empty)
+                        rtbMetin.SelectionAlignment = HorizontalAlignment.Left;
+                    else
+                    {
+                        rtbMetin.SelectAll();
+                        rtbMetin.SelectionAlignment = HorizontalAlignment.Left;
+                    }
+                    break;
+                default:MessageBox.Show("Hatalı tanımlama yaptın,\n\tMetinHizala > Switch-Case");break;
+            }
+        }
+
+        private void btnSonra_Click(object sender, EventArgs e)
+        {
+            if (rtbMetin.CanRedo == true)
+                rtbMetin.Redo();
+        }
+
+        private void btnOnce_Click(object sender, EventArgs e)
+        {
+            if (rtbMetin.CanUndo == true)
+                rtbMetin.Undo();
+        }
+
+        private void btnUstKarakter_Click(object sender, EventArgs e)
+        {
+            int type = rtbMetin.SelectionCharOffset;
+            if (type <= 0)
+            {
+                rtbMetin.SelectionCharOffset = 10;
+                btnUstKarakter.FlatStyle = FlatStyle.Flat;
+                btnAltKarakter.FlatStyle = FlatStyle.Standard;
+            }
+            else
+            {
+                rtbMetin.SelectionCharOffset = 0;
+                btnUstKarakter.FlatStyle = FlatStyle.Standard;
+            }
+        }
+
+        private void btnAltKarakter_Click(object sender, EventArgs e)
+        {
+            int type = rtbMetin.SelectionCharOffset;
+            if (type >= 0)
+            {
+                rtbMetin.SelectionCharOffset = -10;
+                btnAltKarakter.FlatStyle = FlatStyle.Flat;
+                btnUstKarakter.FlatStyle = FlatStyle.Standard;
+            }
+            else
+            {
+                rtbMetin.SelectionCharOffset = 0;
+                btnAltKarakter.FlatStyle = FlatStyle.Standard;
+            }
+                
+        }
+
+        private void btnSakla_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            
+            sfd.Filter = "Zengin Metin Belgesi | *.rtf";
+            sfd.Title = "Metni Kaydet";
+            sfd.InitialDirectory = Application.StartupPath;         
+            if(sfd.ShowDialog() == DialogResult.OK){
+                string result = "", resultF = "", fileEdited = sfd.FileName, trimMain = $"{Application.StartupPath}\\", fileType = ".rtf";
+                for (int i = 0; i < trimMain.Length; i++)
+                {
+                    result = fileEdited.TrimStart(trimMain[i]);
+                    fileEdited = result;
+                }
+                for(int i = fileType.Length-1; i >= 0; i--)
+                {
+                    resultF = result.TrimEnd(fileType[i]);
+                    result = resultF;
+                }
+                    
+                this.Text = result;
+                rtbMetin.SaveFile(sfd.FileName);
+            }
+        }
+
+        private void boslukMadde(object sender, EventArgs e)
+        {
+            switch (cbBosluk.Checked){
+                case true:  rtbMetin.SelectionIndent = 8; break;
+                case false: rtbMetin.SelectionIndent = 0; break;
+            }
+            switch (cbMadİsrt.Checked){
+                case true:  rtbMetin.SelectionBullet = true; break;
+                case false: rtbMetin.SelectionBullet = false; break;
+            }
         }
     }
     /*
@@ -137,4 +282,6 @@ namespace _10.Hafta_18._04._24_
      *          .Start(); 
      *          ile çalıştırılmalı
      */
+
+    // <a href="https://www.flaticon.com/free-icons/shoot" title="shoot icons">Shoot icons created by Freepik - Flaticon</a>
 }
