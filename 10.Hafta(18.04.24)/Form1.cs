@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace _10.Hafta_18._04._24_
 {
@@ -16,16 +17,37 @@ namespace _10.Hafta_18._04._24_
         {
             InitializeComponent();
         }
-
-        private void trackBar1_Scroll(object sender, EventArgs e)
+        enum NIList
         {
-            rtbMetin.ZoomFactor = tbMetinBoyut.Value;
+            None, Info, Warning, Error
         }
-
+        NIList secilen = NIList.None;
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            //timer1.Start();
+            cbNIIcon.SelectedItem = 0;
+            for (int i = 0; i < Enum.GetNames(typeof(NIList)).Length; i++)
+            {
+                cbNIIcon.Items.Add($"{Enum.GetName(typeof(NIList), i)}");
+            }
+            cbNIIcon.Text = secilen.ToString();
+
+            flpSol.FlowDirection = FlowDirection.TopDown;
+
+            tooltipAyarla();
         }
+        private void tooltipAyarla()
+        {
+            tp1.AutoPopDelay = 5000;
+            tp1.InitialDelay = 1000;
+            tp1.ReshowDelay = 500;
+            tp1.ToolTipIcon = ToolTipIcon.Info;
+            tp1.ToolTipTitle = "Uyarı..!";
+            tp1.IsBalloon = true;
+            tp1.SetToolTip(tbKimlikTooltip, "Burada kayıt işlemleri yapılır");
+        }
+        #region Kısaltma
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -34,6 +56,11 @@ namespace _10.Hafta_18._04._24_
             toolStripProgressBar1.Value = DateTime.Now.Second;
             //TimeSpan ts = new TimeSpan(dt,2,3);
 
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            rtbMetin.ZoomFactor = tbMetinBoyut.Value;
         }
 
         private void btnFont_Click(object sender, EventArgs e)
@@ -170,6 +197,159 @@ namespace _10.Hafta_18._04._24_
             switch (cbMadİsrt.Checked){
                 case true:  rtbMetin.SelectionBullet = true; break;
                 case false: rtbMetin.SelectionBullet = false; break;
+            }
+        }
+
+        private void tabKontrol(object sender, EventArgs e)
+        {
+            RadioButton rdb = (RadioButton)sender;
+            switch (rdb.Name)
+            {
+                case "rdbTop":      tabControlMain.Alignment = TabAlignment.Top;    break;
+                case "rdbLeft":     tabControlMain.Alignment = TabAlignment.Left;   break;
+                case "rdbRight":    tabControlMain.Alignment = TabAlignment.Right;  break;
+                case "rdbBottom":   tabControlMain.Alignment = TabAlignment.Bottom; break;
+                default: MessageBox.Show("Hatalı tanımlama yaptın,\n\tabKontrol > Switch-Case"); break;
+            }
+        }
+
+        private void tabGecis(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            switch (btn.Name)
+            {
+                case "btnTabOnce":
+                    int aktifV1 = tabControlMain.SelectedIndex;
+                    if(aktifV1 - 1 >= 0)
+                    {
+                        tabControlMain.SelectTab(--aktifV1);
+                    }
+                    break;
+                case "btnTabSonraki":
+                    int aktifV2 = tabControlMain.SelectedIndex;
+                    if (aktifV2 + 1 < tabControlMain.TabPages.Count)
+                        tabControlMain.SelectTab(++aktifV2);
+                    break;
+                default: MessageBox.Show("Hatalı tanımlama yaptın,\n\tTabGecis > Switch-Case"); break;
+            }
+        }
+
+        private void tabControlMain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControlMain.SelectedIndex == 1)
+                dtpBaslangic.Value = new DateTime(2002, 01, 12);
+        }
+
+        private void btnHesapla_Click(object sender, EventArgs e)
+        {
+            DateTime std = dtpBaslangic.Value.Date;
+            DateTime etd = dtpBitis.Value.Date;
+
+            TimeSpan ts = etd - std;
+            int day = ts.Days;
+            int month = ((etd.Year - std.Year) * 12) + etd.Month - std.Month;
+            //int year = (etd.Year - std.Year);
+            //double yearV2 = (double)month / 12
+            double yearV3 = (double)day / 365.4;  // En hassas ölçümü gün hesabında, yılların artık zamanını ekleyerek buluruz
+            lblYil.Text = $"Yıl : {Math.Round(yearV3, 2)}";
+            lblAy.Text = $"Ay: {month}";
+            lblGun.Text = $"Gün: {day}";
+        }
+
+        private void mcTakvim_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            MessageBox.Show($"{mcTakvim.SelectionStart.ToLongDateString()}");
+        }
+
+        private void btnOlustur_Click(object sender, EventArgs e)
+        {
+            Satranc(flpSol, 3);
+            Satranc(flpSag, 5);
+        }
+
+        private void Satranc(FlowLayoutPanel flp, int bosluk)
+        {
+            flp.Controls.Clear();
+            bool siyah = false;
+            int syc = 1;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    Button btn = new Button() { Name = $"{flp.Name}_btn_{syc}", Size = new Size(30, 30), FlatStyle = FlatStyle.Flat};
+                    switch (siyah)
+                    {
+                        case true:
+                            btn.Text = $"{syc++}";
+                            btn.FlatAppearance.BorderSize = 0;
+                            btn.ForeColor = Color.White;
+                            btn.BackColor = Color.Black;
+                            siyah = false;
+                            break;
+                        case false:
+                            btn.Text = $"{syc++}";
+                            btn.FlatAppearance.BorderSize = 0;
+                            btn.ForeColor = Color.Black;
+                            btn.BackColor = Color.White;
+                            siyah = true;
+                            break;
+                    }
+                    btn.Margin = new Padding(bosluk);
+                    flp.Controls.Add(btn);
+                    btn.Click += new EventHandler(strncBtnClick);
+                }
+                siyah = (siyah == true) ? false : true;
+            }
+        }
+
+        private void strncBtnClick(object sender, EventArgs e){
+            Button btn = (Button)sender;
+            MessageBox.Show($"{btn.Name} isimli butona tıkladın");
+        }
+
+        #endregion
+
+        private void btnMsjGndr_Click(object sender, EventArgs e)
+        {
+            switch (secilen)
+            {
+                case NIList.None: notifyIcon1.BalloonTipIcon = ToolTipIcon.None; break;
+                case NIList.Info: notifyIcon1.BalloonTipIcon = ToolTipIcon.Info; break;
+                case NIList.Warning: notifyIcon1.BalloonTipIcon = ToolTipIcon.Warning; break;
+                case NIList.Error: notifyIcon1.BalloonTipIcon = ToolTipIcon.Error; break;
+            }
+           
+                notifyIcon1.ShowBalloonTip(Convert.ToInt32(tbNISure.Text), tbNIBaslik.Text, tbNIMesaj.Text, notifyIcon1.BalloonTipIcon);
+        }
+
+        private void cbNIIcon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            secilen = (NIList)cbNIIcon.SelectedIndex;
+            //MessageBox.Show($"{secilen}");
+        }
+
+        private void btnKaydetBilgiler_Click(object sender, EventArgs e)
+        {
+            if(String.IsNullOrEmpty(tbKimlikBilgiler.Text))
+            {
+                ep1.SetError(tbKimlikBilgiler, "Tc kimlik no girin...");
+            }else if (String.IsNullOrEmpty(tbTelBilgiler.Text))
+            {
+                ep1.SetError(tbTelBilgiler, "Telefon numarası girin...");
+            }else if(tbKimlikBilgiler.Text.Length != 11)
+            {
+                ep1.SetError(tbKimlikBilgiler, "11 Haneli TC no girin...");
+            }else if (lbTcTel.Items.Contains($"{tbKimlikBilgiler.Text} {tbTelBilgiler.Text}"))
+            {
+                ep1.SetError(tbKimlikBilgiler, "Daha önce eklendi...");
+                ep1.SetError(tbTelBilgiler, "Daha önce eklendi...");
+            }else
+            {
+                lbTcTel.Items.Add($"{tbKimlikBilgiler.Text} {tbTelBilgiler.Text}");
+                tbTelBilgiler.Text = String.Empty;
+                tbKimlikBilgiler.Text = String.Empty;
+                ep1.Clear();
+                tbKimlikBilgiler.Focus();
             }
         }
     }
