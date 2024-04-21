@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.metinEditor = new System.Windows.Forms.TabPage();
+            this.lblLinkStatus = new System.Windows.Forms.Label();
             this.btnAltKarakter = new System.Windows.Forms.Button();
             this.Icons = new System.Windows.Forms.ImageList(this.components);
             this.btnUstKarakter = new System.Windows.Forms.Button();
@@ -142,6 +143,7 @@
             // 
             // metinEditor
             // 
+            this.metinEditor.Controls.Add(this.lblLinkStatus);
             this.metinEditor.Controls.Add(this.btnAltKarakter);
             this.metinEditor.Controls.Add(this.btnUstKarakter);
             this.metinEditor.Controls.Add(this.btnFont);
@@ -165,6 +167,15 @@
             this.metinEditor.TabIndex = 0;
             this.metinEditor.Text = "Metin Editörü";
             this.metinEditor.UseVisualStyleBackColor = true;
+            // 
+            // lblLinkStatus
+            // 
+            this.lblLinkStatus.AutoSize = true;
+            this.lblLinkStatus.Location = new System.Drawing.Point(79, 16);
+            this.lblLinkStatus.Name = "lblLinkStatus";
+            this.lblLinkStatus.Size = new System.Drawing.Size(64, 13);
+            this.lblLinkStatus.TabIndex = 17;
+            this.lblLinkStatus.Text = "Link Durum:";
             // 
             // btnAltKarakter
             // 
@@ -257,6 +268,7 @@
             this.rdNotDetectURL.TabIndex = 11;
             this.rdNotDetectURL.TabStop = true;
             this.rdNotDetectURL.UseVisualStyleBackColor = true;
+            this.rdNotDetectURL.CheckedChanged += new System.EventHandler(this.urlCheckedChanged);
             // 
             // cbBosluk
             // 
@@ -337,6 +349,7 @@
             this.rdDetectURL.TabIndex = 9;
             this.rdDetectURL.TabStop = true;
             this.rdDetectURL.UseVisualStyleBackColor = true;
+            this.rdDetectURL.CheckedChanged += new System.EventHandler(this.urlCheckedChanged);
             // 
             // label1
             // 
@@ -405,7 +418,7 @@
             this.rtbMetin.Name = "rtbMetin";
             this.rtbMetin.Size = new System.Drawing.Size(415, 296);
             this.rtbMetin.TabIndex = 3;
-            this.rtbMetin.Text = "Sample Text";
+            this.rtbMetin.Text = "Sample Text\nhttps://learn.microsoft.com";
             // 
             // tbMetinBoyut
             // 
@@ -670,7 +683,7 @@
             this.groupBox4.Size = new System.Drawing.Size(321, 152);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Liste";
             // 
             // lbTcTel
             // 
@@ -789,6 +802,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 496);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(738, 22);
+            this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1069,6 +1083,7 @@
         private System.Windows.Forms.ToolStripMenuItem programıKapatToolStripMenuItem;
         private System.Windows.Forms.ErrorProvider ep1;
         private System.Windows.Forms.ToolTip tp1;
+        private System.Windows.Forms.Label lblLinkStatus;
     }
 }
 

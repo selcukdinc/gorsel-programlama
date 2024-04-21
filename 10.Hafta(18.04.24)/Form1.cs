@@ -24,7 +24,10 @@ namespace _10.Hafta_18._04._24_
         NIList secilen = NIList.None;
         private void Form1_Load(object sender, EventArgs e)
         {
-            //timer1.Start();
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.MaximizeBox = false; this.MinimizeBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            timer1.Start();
             cbNIIcon.SelectedItem = 0;
             for (int i = 0; i < Enum.GetNames(typeof(NIList)).Length; i++)
             {
@@ -35,6 +38,19 @@ namespace _10.Hafta_18._04._24_
             flpSol.FlowDirection = FlowDirection.TopDown;
 
             tooltipAyarla();
+            string versionNo = (string)AppDomain.CurrentDomain.SetupInformation.GetType().GetProperty("TargetFrameworkName").GetValue(AppDomain.CurrentDomain.SetupInformation);
+            versionNo = versionNo.Remove(0, 23).Trim();
+            if (versionNo == "4.6" || versionNo == "4.6.1" || versionNo == "4.6.2")
+            {
+                lblLinkStatus.Text = $"Framework'unuz {versionNo} Linkler çalışacaktır";
+                lblLinkStatus.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblLinkStatus.Text = "Framework'unuz (4.6, 4.6.1, 4.6.2) arasından herhangi biri değil, Linkler çalışmayabilir";
+                lblLinkStatus.ForeColor = Color.Tomato;
+            }
+            rdDetectURL.Checked = true;
         }
         private void tooltipAyarla()
         {
@@ -309,6 +325,9 @@ namespace _10.Hafta_18._04._24_
 
         #endregion
 
+        #region kısaltmaV2
+
+        
         private void btnMsjGndr_Click(object sender, EventArgs e)
         {
             switch (secilen)
@@ -319,7 +338,7 @@ namespace _10.Hafta_18._04._24_
                 case NIList.Error: notifyIcon1.BalloonTipIcon = ToolTipIcon.Error; break;
             }
            
-                notifyIcon1.ShowBalloonTip(Convert.ToInt32(tbNISure.Text), tbNIBaslik.Text, tbNIMesaj.Text, notifyIcon1.BalloonTipIcon);
+            notifyIcon1.ShowBalloonTip(Convert.ToInt32(tbNISure.Text), tbNIBaslik.Text, tbNIMesaj.Text, notifyIcon1.BalloonTipIcon);
         }
 
         private void cbNIIcon_SelectedIndexChanged(object sender, EventArgs e)
@@ -351,6 +370,19 @@ namespace _10.Hafta_18._04._24_
                 ep1.Clear();
                 tbKimlikBilgiler.Focus();
             }
+        }
+        #endregion
+
+        private void urlCheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rdb = (RadioButton)sender;
+            if(rdb.Name == "rdDetectURL")
+            
+                if(rdb.Checked == true)
+                    rtbMetin.DetectUrls = true;
+                else
+                    rtbMetin.DetectUrls = false;
+
         }
     }
     /*

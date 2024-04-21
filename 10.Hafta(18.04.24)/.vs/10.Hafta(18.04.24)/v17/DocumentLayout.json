@@ -3,12 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|10.Hafta(18.04.24)||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\10.hafta(18.04.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C8C019E0-1ECC-4C06-8893-0DB1534618E1}|10.Hafta(18.04.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\10.hafta(18.04.24)\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +24,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 127,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "10.Hafta(18.04.24)",
+              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\10.Hafta(18.04.24).csproj",
+              "RelativeDocumentMoniker": "10.Hafta(18.04.24).csproj",
+              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\10.Hafta(18.04.24).csproj*",
+              "RelativeToolTip": "10.Hafta(18.04.24).csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-21T13:25:52.067Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -34,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\10.Hafta(18.04.24)\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAADwvyMAAAAAAAAA",
+              "ViewState": "AQIAADUBAAAAAAAAAAAAAFQBAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T10:38:44.219Z",
               "EditorCaption": ""
