@@ -300,7 +300,7 @@
             this.rdbSol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSol.ImageIndex = 6;
             this.rdbSol.ImageList = this.Icons;
-            this.rdbSol.Location = new System.Drawing.Point(8, 21);
+            this.rdbSol.Location = new System.Drawing.Point(6, 19);
             this.rdbSol.Name = "rdbSol";
             this.rdbSol.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.rdbSol.Size = new System.Drawing.Size(38, 38);
@@ -315,7 +315,7 @@
             this.rdbOrta.AutoSize = true;
             this.rdbOrta.ImageIndex = 7;
             this.rdbOrta.ImageList = this.Icons;
-            this.rdbOrta.Location = new System.Drawing.Point(52, 19);
+            this.rdbOrta.Location = new System.Drawing.Point(50, 19);
             this.rdbOrta.Name = "rdbOrta";
             this.rdbOrta.Size = new System.Drawing.Size(38, 38);
             this.rdbOrta.TabIndex = 11;
@@ -329,7 +329,7 @@
             this.rdbSag.AutoSize = true;
             this.rdbSag.ImageIndex = 8;
             this.rdbSag.ImageList = this.Icons;
-            this.rdbSag.Location = new System.Drawing.Point(96, 19);
+            this.rdbSag.Location = new System.Drawing.Point(94, 19);
             this.rdbSag.Name = "rdbSag";
             this.rdbSag.Size = new System.Drawing.Size(38, 38);
             this.rdbSag.TabIndex = 10;
