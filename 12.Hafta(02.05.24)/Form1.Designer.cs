@@ -28,232 +28,590 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "",
-            "",
-            "",
-            ""}, -1);
-            this.btnSample = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnNodeAdd2 = new System.Windows.Forms.Button();
+            this.btnNodeAdd1 = new System.Windows.Forms.Button();
+            this.treeView2 = new System.Windows.Forms.TreeView();
             this.btnCollapse = new System.Windows.Forms.Button();
             this.btnExpand = new System.Windows.Forms.Button();
             this.btnNodeAddV2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnNode = new System.Windows.Forms.Button();
+            this.btnNodeAddV1 = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.ımageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnTile = new System.Windows.Forms.Button();
+            this.btnSmallicon = new System.Windows.Forms.Button();
+            this.btnDetails = new System.Windows.Forms.Button();
+            this.btnLargeIcon = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
+            this.btnAddList2 = new System.Windows.Forms.Button();
+            this.btnAddList1 = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.chAd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chSoyad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chTelefon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ımageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnCopy = new System.Windows.Forms.Button();
+            this.btnTargetLoc = new System.Windows.Forms.Button();
+            this.btnSrcLoc = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.clbVeriler = new System.Windows.Forms.CheckedListBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.girişToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.extraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.boslukLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.btnGroupLoc = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnSample
-            // 
-            this.btnSample.Location = new System.Drawing.Point(860, 42);
-            this.btnSample.Name = "btnSample";
-            this.btnSample.Size = new System.Drawing.Size(110, 23);
-            this.btnSample.TabIndex = 7;
-            this.btnSample.Text = "Sample";
-            this.btnSample.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(816, 519);
+            this.tabControl1.Size = new System.Drawing.Size(949, 539);
             this.tabControl1.TabIndex = 10;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnNodeAdd2);
+            this.tabPage1.Controls.Add(this.btnNodeAdd1);
+            this.tabPage1.Controls.Add(this.treeView2);
             this.tabPage1.Controls.Add(this.btnCollapse);
             this.tabPage1.Controls.Add(this.btnExpand);
             this.tabPage1.Controls.Add(this.btnNodeAddV2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.btnNode);
+            this.tabPage1.Controls.Add(this.btnNodeAddV1);
             this.tabPage1.Controls.Add(this.treeView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(808, 493);
+            this.tabPage1.Size = new System.Drawing.Size(941, 513);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "TreeView";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "Add.ico");
+            this.ımageList1.Images.SetKeyName(1, "Fastforward.ico");
+            this.ımageList1.Images.SetKeyName(2, "folder.ico");
+            this.ımageList1.Images.SetKeyName(3, "folderExpanded.ico");
+            this.ımageList1.Images.SetKeyName(4, "Rewind.ico");
+            // 
+            // btnNodeAdd2
+            // 
+            this.btnNodeAdd2.ImageIndex = 0;
+            this.btnNodeAdd2.ImageList = this.ımageList1;
+            this.btnNodeAdd2.Location = new System.Drawing.Point(783, 91);
+            this.btnNodeAdd2.Name = "btnNodeAdd2";
+            this.btnNodeAdd2.Size = new System.Drawing.Size(150, 45);
+            this.btnNodeAdd2.TabIndex = 15;
+            this.btnNodeAdd2.Text = "Add Node 2";
+            this.btnNodeAdd2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNodeAdd2.UseVisualStyleBackColor = true;
+            this.btnNodeAdd2.Click += new System.EventHandler(this.btnNodeAdd2_Click);
+            // 
+            // btnNodeAdd1
+            // 
+            this.btnNodeAdd1.ImageIndex = 0;
+            this.btnNodeAdd1.ImageList = this.ımageList1;
+            this.btnNodeAdd1.Location = new System.Drawing.Point(783, 40);
+            this.btnNodeAdd1.Name = "btnNodeAdd1";
+            this.btnNodeAdd1.Size = new System.Drawing.Size(150, 45);
+            this.btnNodeAdd1.TabIndex = 14;
+            this.btnNodeAdd1.Text = "Add Node 1";
+            this.btnNodeAdd1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNodeAdd1.UseVisualStyleBackColor = true;
+            this.btnNodeAdd1.Click += new System.EventHandler(this.btnNodeAdd1_Click);
+            // 
+            // treeView2
+            // 
+            this.treeView2.Location = new System.Drawing.Point(514, 42);
+            this.treeView2.Name = "treeView2";
+            this.treeView2.Size = new System.Drawing.Size(263, 369);
+            this.treeView2.TabIndex = 13;
+            // 
+            // btnCollapse
+            // 
+            this.btnCollapse.ImageIndex = 4;
+            this.btnCollapse.ImageList = this.ımageList1;
+            this.btnCollapse.Location = new System.Drawing.Point(383, 195);
+            this.btnCollapse.Name = "btnCollapse";
+            this.btnCollapse.Size = new System.Drawing.Size(116, 45);
+            this.btnCollapse.TabIndex = 12;
+            this.btnCollapse.Text = "Collapse all";
+            this.btnCollapse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCollapse.UseVisualStyleBackColor = true;
+            this.btnCollapse.Click += new System.EventHandler(this.btnCollapse_Click);
+            // 
+            // btnExpand
+            // 
+            this.btnExpand.ImageIndex = 1;
+            this.btnExpand.ImageList = this.ımageList1;
+            this.btnExpand.Location = new System.Drawing.Point(383, 144);
+            this.btnExpand.Name = "btnExpand";
+            this.btnExpand.Size = new System.Drawing.Size(116, 45);
+            this.btnExpand.TabIndex = 11;
+            this.btnExpand.Text = "Expand All";
+            this.btnExpand.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExpand.UseVisualStyleBackColor = true;
+            this.btnExpand.Click += new System.EventHandler(this.btnExpand_Click);
+            // 
+            // btnNodeAddV2
+            // 
+            this.btnNodeAddV2.ImageIndex = 0;
+            this.btnNodeAddV2.ImageList = this.ımageList1;
+            this.btnNodeAddV2.Location = new System.Drawing.Point(383, 93);
+            this.btnNodeAddV2.Name = "btnNodeAddV2";
+            this.btnNodeAddV2.Size = new System.Drawing.Size(116, 45);
+            this.btnNodeAddV2.TabIndex = 10;
+            this.btnNodeAddV2.Text = "Node Add V2";
+            this.btnNodeAddV2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNodeAddV2.UseVisualStyleBackColor = true;
+            this.btnNodeAddV2.Click += new System.EventHandler(this.btnNodeAddV2_Click);
+            // 
+            // btnNodeAddV1
+            // 
+            this.btnNodeAddV1.ImageIndex = 0;
+            this.btnNodeAddV1.ImageList = this.ımageList1;
+            this.btnNodeAddV1.Location = new System.Drawing.Point(383, 42);
+            this.btnNodeAddV1.Name = "btnNodeAddV1";
+            this.btnNodeAddV1.Size = new System.Drawing.Size(116, 45);
+            this.btnNodeAddV1.TabIndex = 8;
+            this.btnNodeAddV1.Text = "Node Add V1";
+            this.btnNodeAddV1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNodeAddV1.UseVisualStyleBackColor = true;
+            this.btnNodeAddV1.Click += new System.EventHandler(this.btnNodeAddV1_Click);
+            // 
+            // treeView1
+            // 
+            this.treeView1.ImageIndex = 2;
+            this.treeView1.ImageList = this.ımageList2;
+            this.treeView1.Location = new System.Drawing.Point(33, 40);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.SelectedImageIndex = 3;
+            this.treeView1.Size = new System.Drawing.Size(344, 369);
+            this.treeView1.TabIndex = 7;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // ımageList2
+            // 
+            this.ımageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList2.ImageStream")));
+            this.ımageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList2.Images.SetKeyName(0, "Add.ico");
+            this.ımageList2.Images.SetKeyName(1, "Fastforward.ico");
+            this.ımageList2.Images.SetKeyName(2, "folder.ico");
+            this.ımageList2.Images.SetKeyName(3, "folderExpanded.ico");
+            this.ımageList2.Images.SetKeyName(4, "Rewind.ico");
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnTile);
+            this.tabPage2.Controls.Add(this.btnSmallicon);
+            this.tabPage2.Controls.Add(this.btnDetails);
+            this.tabPage2.Controls.Add(this.btnLargeIcon);
+            this.tabPage2.Controls.Add(this.btnView);
+            this.tabPage2.Controls.Add(this.btnAddList2);
+            this.tabPage2.Controls.Add(this.btnAddList1);
             this.tabPage2.Controls.Add(this.listView2);
-            this.tabPage2.Controls.Add(this.btnAdd);
-            this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.listView1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(808, 493);
+            this.tabPage2.Size = new System.Drawing.Size(941, 513);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ListView";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btnCollapse
+            // btnTile
             // 
-            this.btnCollapse.Location = new System.Drawing.Point(332, 190);
-            this.btnCollapse.Name = "btnCollapse";
-            this.btnCollapse.Size = new System.Drawing.Size(110, 23);
-            this.btnCollapse.TabIndex = 12;
-            this.btnCollapse.Text = "Collapse all";
-            this.btnCollapse.UseVisualStyleBackColor = true;
+            this.btnTile.Location = new System.Drawing.Point(410, 269);
+            this.btnTile.Name = "btnTile";
+            this.btnTile.Size = new System.Drawing.Size(127, 23);
+            this.btnTile.TabIndex = 20;
+            this.btnTile.Text = "Tile";
+            this.btnTile.UseVisualStyleBackColor = true;
+            this.btnTile.Click += new System.EventHandler(this.listViewChanger);
             // 
-            // btnExpand
+            // btnSmallicon
             // 
-            this.btnExpand.Location = new System.Drawing.Point(332, 138);
-            this.btnExpand.Name = "btnExpand";
-            this.btnExpand.Size = new System.Drawing.Size(110, 23);
-            this.btnExpand.TabIndex = 11;
-            this.btnExpand.Text = "Expand All";
-            this.btnExpand.UseVisualStyleBackColor = true;
+            this.btnSmallicon.Location = new System.Drawing.Point(410, 240);
+            this.btnSmallicon.Name = "btnSmallicon";
+            this.btnSmallicon.Size = new System.Drawing.Size(127, 23);
+            this.btnSmallicon.TabIndex = 19;
+            this.btnSmallicon.Text = "SmallIcon";
+            this.btnSmallicon.UseVisualStyleBackColor = true;
+            this.btnSmallicon.Click += new System.EventHandler(this.listViewChanger);
             // 
-            // btnNodeAddV2
+            // btnDetails
             // 
-            this.btnNodeAddV2.Location = new System.Drawing.Point(332, 87);
-            this.btnNodeAddV2.Name = "btnNodeAddV2";
-            this.btnNodeAddV2.Size = new System.Drawing.Size(110, 23);
-            this.btnNodeAddV2.TabIndex = 10;
-            this.btnNodeAddV2.Text = "Node Add V2";
-            this.btnNodeAddV2.UseVisualStyleBackColor = true;
+            this.btnDetails.Location = new System.Drawing.Point(410, 211);
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.Size = new System.Drawing.Size(127, 23);
+            this.btnDetails.TabIndex = 18;
+            this.btnDetails.Text = "Details";
+            this.btnDetails.UseVisualStyleBackColor = true;
+            this.btnDetails.Click += new System.EventHandler(this.listViewChanger);
             // 
-            // label1
+            // btnLargeIcon
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "TreeView";
+            this.btnLargeIcon.Location = new System.Drawing.Point(410, 182);
+            this.btnLargeIcon.Name = "btnLargeIcon";
+            this.btnLargeIcon.Size = new System.Drawing.Size(127, 23);
+            this.btnLargeIcon.TabIndex = 17;
+            this.btnLargeIcon.Text = "LargeIcon";
+            this.btnLargeIcon.UseVisualStyleBackColor = true;
+            this.btnLargeIcon.Click += new System.EventHandler(this.listViewChanger);
             // 
-            // btnNode
+            // btnView
             // 
-            this.btnNode.Location = new System.Drawing.Point(332, 42);
-            this.btnNode.Name = "btnNode";
-            this.btnNode.Size = new System.Drawing.Size(110, 23);
-            this.btnNode.TabIndex = 8;
-            this.btnNode.Text = "Node Add";
-            this.btnNode.UseVisualStyleBackColor = true;
+            this.btnView.Location = new System.Drawing.Point(410, 153);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(127, 23);
+            this.btnView.TabIndex = 16;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.listViewChanger);
             // 
-            // treeView1
+            // btnAddList2
             // 
-            this.treeView1.Location = new System.Drawing.Point(33, 40);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(276, 334);
-            this.treeView1.TabIndex = 7;
+            this.btnAddList2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddList2.ImageIndex = 0;
+            this.btnAddList2.ImageList = this.ımageList1;
+            this.btnAddList2.Location = new System.Drawing.Point(806, 387);
+            this.btnAddList2.Name = "btnAddList2";
+            this.btnAddList2.Size = new System.Drawing.Size(127, 45);
+            this.btnAddList2.TabIndex = 15;
+            this.btnAddList2.Text = "Add";
+            this.btnAddList2.UseVisualStyleBackColor = true;
+            this.btnAddList2.Click += new System.EventHandler(this.btnAddList2_Click);
             // 
-            // btnAdd
+            // btnAddList1
             // 
-            this.btnAdd.Location = new System.Drawing.Point(358, 47);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(110, 23);
-            this.btnAdd.TabIndex = 12;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "ListView";
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(27, 47);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(276, 334);
-            this.listView1.TabIndex = 10;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.btnAddList1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddList1.ImageIndex = 0;
+            this.btnAddList1.ImageList = this.ımageList1;
+            this.btnAddList1.Location = new System.Drawing.Point(410, 102);
+            this.btnAddList1.Name = "btnAddList1";
+            this.btnAddList1.Size = new System.Drawing.Size(127, 45);
+            this.btnAddList1.TabIndex = 14;
+            this.btnAddList1.Text = "Add 1";
+            this.btnAddList1.UseVisualStyleBackColor = true;
+            this.btnAddList1.Click += new System.EventHandler(this.btnAddList1_Click);
             // 
             // listView2
             // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            this.listView2.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1});
             this.listView2.HideSelection = false;
-            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView2.Location = new System.Drawing.Point(520, 47);
+            this.listView2.Location = new System.Drawing.Point(560, 47);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(276, 334);
+            this.listView2.Size = new System.Drawing.Size(374, 334);
             this.listView2.TabIndex = 13;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
+            // listView1
             // 
-            this.columnHeader1.Text = "Bakiye";
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chAd,
+            this.chSoyad,
+            this.chTelefon});
+            this.listView1.HideSelection = false;
+            this.listView1.LargeImageList = this.ımageList1;
+            this.listView1.Location = new System.Drawing.Point(27, 47);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(359, 334);
+            this.listView1.SmallImageList = this.ımageList2;
+            this.listView1.StateImageList = this.ımageList3;
+            this.listView1.TabIndex = 10;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader2
+            // chAd
             // 
-            this.columnHeader2.Text = "Müşteri Adı";
-            this.columnHeader2.Width = 84;
+            this.chAd.Text = "Müşteri Adı";
+            this.chAd.Width = 100;
             // 
-            // columnHeader3
+            // chSoyad
             // 
-            this.columnHeader3.Text = "Müşteri Soyadı";
-            this.columnHeader3.Width = 102;
+            this.chSoyad.Text = "Müşteri Soyadı";
+            this.chSoyad.Width = 100;
+            // 
+            // chTelefon
+            // 
+            this.chTelefon.Text = "Müşteri Telefon";
+            this.chTelefon.Width = 100;
+            // 
+            // ımageList3
+            // 
+            this.ımageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList3.ImageStream")));
+            this.ımageList3.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList3.Images.SetKeyName(0, "Add.ico");
+            this.ımageList3.Images.SetKeyName(1, "Fastforward.ico");
+            this.ımageList3.Images.SetKeyName(2, "folder.ico");
+            this.ımageList3.Images.SetKeyName(3, "folderExpanded.ico");
+            this.ımageList3.Images.SetKeyName(4, "Rewind.ico");
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btnCopy);
+            this.tabPage3.Controls.Add(this.btnTargetLoc);
+            this.tabPage3.Controls.Add(this.btnSrcLoc);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.clbVeriler);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(941, 513);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "FolderDialog.CheckedList";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnCopy
+            // 
+            this.btnCopy.Location = new System.Drawing.Point(295, 398);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(119, 23);
+            this.btnCopy.TabIndex = 4;
+            this.btnCopy.Text = "Kopyala";
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
+            // btnTargetLoc
+            // 
+            this.btnTargetLoc.Location = new System.Drawing.Point(152, 398);
+            this.btnTargetLoc.Name = "btnTargetLoc";
+            this.btnTargetLoc.Size = new System.Drawing.Size(119, 23);
+            this.btnTargetLoc.TabIndex = 3;
+            this.btnTargetLoc.Text = "Hedef Konum";
+            this.btnTargetLoc.UseVisualStyleBackColor = true;
+            this.btnTargetLoc.Click += new System.EventHandler(this.btnTargetLoc_Click);
+            // 
+            // btnSrcLoc
+            // 
+            this.btnSrcLoc.Location = new System.Drawing.Point(6, 398);
+            this.btnSrcLoc.Name = "btnSrcLoc";
+            this.btnSrcLoc.Size = new System.Drawing.Size(119, 23);
+            this.btnSrcLoc.TabIndex = 2;
+            this.btnSrcLoc.Text = "Kaynak Konum";
+            this.btnSrcLoc.UseVisualStyleBackColor = true;
+            this.btnSrcLoc.Click += new System.EventHandler(this.btnSrcLoc_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Dosyalar";
+            // 
+            // clbVeriler
+            // 
+            this.clbVeriler.FormattingEnabled = true;
+            this.clbVeriler.Location = new System.Drawing.Point(6, 43);
+            this.clbVeriler.Name = "clbVeriler";
+            this.clbVeriler.Size = new System.Drawing.Size(408, 349);
+            this.clbVeriler.TabIndex = 0;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dosyaToolStripMenuItem,
+            this.düzenToolStripMenuItem,
+            this.girişToolStripMenuItem,
+            this.extraToolStripMenuItem,
+            this.yeniMenuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(949, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // dosyaToolStripMenuItem
+            // 
+            this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
+            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.dosyaToolStripMenuItem.Text = "Dosya";
+            // 
+            // düzenToolStripMenuItem
+            // 
+            this.düzenToolStripMenuItem.Name = "düzenToolStripMenuItem";
+            this.düzenToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.düzenToolStripMenuItem.Text = "Düzen";
+            // 
+            // girişToolStripMenuItem
+            // 
+            this.girişToolStripMenuItem.Name = "girişToolStripMenuItem";
+            this.girişToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.girişToolStripMenuItem.Text = "Giriş";
+            // 
+            // extraToolStripMenuItem
+            // 
+            this.extraToolStripMenuItem.Name = "extraToolStripMenuItem";
+            this.extraToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.extraToolStripMenuItem.Text = "extra";
+            // 
+            // yeniMenuToolStripMenuItem
+            // 
+            this.yeniMenuToolStripMenuItem.Name = "yeniMenuToolStripMenuItem";
+            this.yeniMenuToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.yeniMenuToolStripMenuItem.Text = "yeniMenu";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.boslukLabel,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 541);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(949, 22);
+            this.statusStrip1.SizingGrip = false;
+            this.statusStrip1.TabIndex = 12;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // boslukLabel
+            // 
+            this.boslukLabel.Name = "boslukLabel";
+            this.boslukLabel.Size = new System.Drawing.Size(555, 17);
+            this.boslukLabel.Spring = true;
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(379, 17);
+            this.toolStripStatusLabel2.Text = "Teknoloji Fakültesi - EEM - Görsel Programlama - 12. Hafta - 03.05.2024";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnGroupLoc);
+            this.tabPage4.Controls.Add(this.listView3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(941, 513);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Group Files";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(245, 30);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(451, 367);
+            this.listView3.TabIndex = 0;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnGroupLoc
+            // 
+            this.btnGroupLoc.Location = new System.Drawing.Point(422, 403);
+            this.btnGroupLoc.Name = "btnGroupLoc";
+            this.btnGroupLoc.Size = new System.Drawing.Size(112, 33);
+            this.btnGroupLoc.TabIndex = 2;
+            this.btnGroupLoc.Text = "Gruplanacak Konum";
+            this.btnGroupLoc.UseVisualStyleBackColor = true;
+            this.btnGroupLoc.Click += new System.EventHandler(this.btnGroupLoc_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 560);
+            this.ClientSize = new System.Drawing.Size(949, 563);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.btnSample);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSample;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnCollapse;
         private System.Windows.Forms.Button btnExpand;
         private System.Windows.Forms.Button btnNodeAddV2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnNode;
+        private System.Windows.Forms.Button btnNodeAddV1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.TreeView treeView2;
+        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Button btnNodeAdd2;
+        private System.Windows.Forms.Button btnNodeAdd1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem dosyaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem düzenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem girişToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem extraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yeniMenuToolStripMenuItem;
+        private System.Windows.Forms.Button btnAddList1;
+        private System.Windows.Forms.Button btnTile;
+        private System.Windows.Forms.Button btnSmallicon;
+        private System.Windows.Forms.Button btnDetails;
+        private System.Windows.Forms.Button btnLargeIcon;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnAddList2;
+        private System.Windows.Forms.ColumnHeader chAd;
+        private System.Windows.Forms.ColumnHeader chSoyad;
+        private System.Windows.Forms.ColumnHeader chTelefon;
+        private System.Windows.Forms.CheckedListBox clbVeriler;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.Button btnTargetLoc;
+        private System.Windows.Forms.Button btnSrcLoc;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel boslukLabel;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ImageList ımageList2;
+        private System.Windows.Forms.ImageList ımageList3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.Button btnGroupLoc;
     }
 }
 
