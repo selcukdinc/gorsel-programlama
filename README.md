@@ -4,14 +4,15 @@
 --|--
 TreeView, ListView, FolderDialog.CheckedList işlendi | Ödev olarak değil ama örnek olarak yapıalbilecek fikirler<br><br>!excel, word, pdf dosyaları gruplanabilir<br><br>!progress bar ile 3 dosya kopyalanıyor, ilerleme progress bar ile göster, 2 checkbox ile işlemler yapılabilir<br><br>!regedit yapılabiilir
 ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/TreeView.png?raw=true)|![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/ListView.png?raw=true)
-![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/FolderDialog.png?raw=true)|
+![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/FolderDialog.png?raw=true)|![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/groupFiles.png?raw=true)
+![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/regedit.png?raw=true) |
 
 ** 10. hafta (19.04.2024) ** | derste işelenenler
 --|--
 rich textbox, tab control, date time picker, flow layout, tooltip işlendi | herhangi bir ödev verilmedi
 ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/10.Hafta(18.04.24)/images/TextEditor.png?raw=true) | ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/10.Hafta(18.04.24)/images/dateTimePicker.png?raw=true) 
 ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/10.Hafta(18.04.24)/images/flowLayout.png?raw=true) | ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/10.Hafta(18.04.24)/images/NotifySender.png?raw=true)
-![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/10.Hafta(18.04.24)/images/Notify.png?raw=true) |
+![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/10.Hafta(18.04.24)/images/Notify.png?raw=true) | 
 
 ** 7. Hafta (28.03.2024) ** |  İşlenenler ve Ödevler
 --|--
