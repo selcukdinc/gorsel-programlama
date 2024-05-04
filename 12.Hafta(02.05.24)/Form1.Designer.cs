@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnNodeAdd2 = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnNodeAdd1 = new System.Windows.Forms.Button();
             this.treeView2 = new System.Windows.Forms.TreeView();
             this.btnCollapse = new System.Windows.Forms.Button();
@@ -62,6 +62,13 @@
             this.btnSrcLoc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.clbVeriler = new System.Windows.Forms.CheckedListBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnGroupLoc = new System.Windows.Forms.Button();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tvReg = new System.Windows.Forms.TreeView();
+            this.lvReg = new System.Windows.Forms.ListView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,16 +79,16 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.boslukLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.btnGroupLoc = new System.Windows.Forms.Button();
+            this.ımageList4 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -90,12 +97,14 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(949, 539);
             this.tabControl1.TabIndex = 10;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -115,16 +124,6 @@
             this.tabPage1.Text = "TreeView";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "Add.ico");
-            this.ımageList1.Images.SetKeyName(1, "Fastforward.ico");
-            this.ımageList1.Images.SetKeyName(2, "folder.ico");
-            this.ımageList1.Images.SetKeyName(3, "folderExpanded.ico");
-            this.ımageList1.Images.SetKeyName(4, "Rewind.ico");
-            // 
             // btnNodeAdd2
             // 
             this.btnNodeAdd2.ImageIndex = 0;
@@ -137,6 +136,16 @@
             this.btnNodeAdd2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNodeAdd2.UseVisualStyleBackColor = true;
             this.btnNodeAdd2.Click += new System.EventHandler(this.btnNodeAdd2_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "Add.ico");
+            this.ımageList1.Images.SetKeyName(1, "Fastforward.ico");
+            this.ımageList1.Images.SetKeyName(2, "folder.ico");
+            this.ımageList1.Images.SetKeyName(3, "folderExpanded.ico");
+            this.ımageList1.Images.SetKeyName(4, "Rewind.ico");
             // 
             // btnNodeAdd1
             // 
@@ -440,6 +449,79 @@
             this.clbVeriler.Size = new System.Drawing.Size(408, 349);
             this.clbVeriler.TabIndex = 0;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnGroupLoc);
+            this.tabPage4.Controls.Add(this.listView3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(941, 513);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Group Files";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnGroupLoc
+            // 
+            this.btnGroupLoc.Location = new System.Drawing.Point(417, 459);
+            this.btnGroupLoc.Name = "btnGroupLoc";
+            this.btnGroupLoc.Size = new System.Drawing.Size(112, 33);
+            this.btnGroupLoc.TabIndex = 2;
+            this.btnGroupLoc.Text = "Gruplanacak Konum";
+            this.btnGroupLoc.UseVisualStyleBackColor = true;
+            this.btnGroupLoc.Click += new System.EventHandler(this.btnGroupLoc_Click);
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(245, 6);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(451, 447);
+            this.listView3.TabIndex = 0;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.panel1);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(941, 513);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Regedit";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tvReg);
+            this.panel1.Controls.Add(this.lvReg);
+            this.panel1.Location = new System.Drawing.Point(3, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(935, 486);
+            this.panel1.TabIndex = 4;
+            // 
+            // tvReg
+            // 
+            this.tvReg.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tvReg.ImageIndex = 0;
+            this.tvReg.ImageList = this.ımageList4;
+            this.tvReg.Location = new System.Drawing.Point(0, 0);
+            this.tvReg.Name = "tvReg";
+            this.tvReg.SelectedImageIndex = 1;
+            this.tvReg.Size = new System.Drawing.Size(308, 486);
+            this.tvReg.TabIndex = 5;
+            this.tvReg.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvReg_AfterSelect);
+            // 
+            // lvReg
+            // 
+            this.lvReg.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lvReg.HideSelection = false;
+            this.lvReg.Location = new System.Drawing.Point(314, 0);
+            this.lvReg.Name = "lvReg";
+            this.lvReg.Size = new System.Drawing.Size(621, 486);
+            this.lvReg.TabIndex = 4;
+            this.lvReg.UseCompatibleStateImageBehavior = false;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -508,36 +590,12 @@
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(379, 17);
             this.toolStripStatusLabel2.Text = "Teknoloji Fakültesi - EEM - Görsel Programlama - 12. Hafta - 03.05.2024";
             // 
-            // tabPage4
+            // ımageList4
             // 
-            this.tabPage4.Controls.Add(this.btnGroupLoc);
-            this.tabPage4.Controls.Add(this.listView3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(941, 513);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Group Files";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // listView3
-            // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(245, 30);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(451, 367);
-            this.listView3.TabIndex = 0;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnGroupLoc
-            // 
-            this.btnGroupLoc.Location = new System.Drawing.Point(422, 403);
-            this.btnGroupLoc.Name = "btnGroupLoc";
-            this.btnGroupLoc.Size = new System.Drawing.Size(112, 33);
-            this.btnGroupLoc.TabIndex = 2;
-            this.btnGroupLoc.Text = "Gruplanacak Konum";
-            this.btnGroupLoc.UseVisualStyleBackColor = true;
-            this.btnGroupLoc.Click += new System.EventHandler(this.btnGroupLoc_Click);
+            this.ımageList4.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList4.ImageStream")));
+            this.ımageList4.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList4.Images.SetKeyName(0, "folderClose.png");
+            this.ımageList4.Images.SetKeyName(1, "folderOpen.png");
             // 
             // Form1
             // 
@@ -549,18 +607,20 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TF Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -612,6 +672,11 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.Button btnGroupLoc;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TreeView tvReg;
+        private System.Windows.Forms.ListView lvReg;
+        private System.Windows.Forms.ImageList ımageList4;
     }
 }
 

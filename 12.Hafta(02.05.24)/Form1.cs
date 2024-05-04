@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _12.Hafta_02._05._24_
 {
@@ -21,13 +22,13 @@ namespace _12.Hafta_02._05._24_
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //tabControl1.SelectTab(3);
+            tabControl1.SelectTab(4);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             statusStrip1.GripStyle = ToolStripGripStyle.Hidden;
-            btnGroupLoc.Enabled = false;
+            //btnGroupLoc.Enabled = false;
         }
 
         #region TreeViewSection
@@ -224,20 +225,20 @@ namespace _12.Hafta_02._05._24_
 
         private void listViewChanger(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
+            System.Windows.Forms.Button btn = (System.Windows.Forms.Button)sender;
             listView1.CheckBoxes = false;
-            
+
             switch (btn.Name)
             {
-                case "btnView":         listView1.View = View.Details;      break;
-                case "btnLargeIcon":    listView1.View = View.LargeIcon;    break;
-                case "btnDetails":      listView1.View = View.List;         break;
-                case "btnSmallicon":    listView1.View = View.SmallIcon;    break;
-                case "btnTile":         listView1.View = View.Tile;         break;
+                case "btnView": listView1.View = View.Details; break;
+                case "btnLargeIcon": listView1.View = View.LargeIcon; break;
+                case "btnDetails": listView1.View = View.List; break;
+                case "btnSmallicon": listView1.View = View.SmallIcon; break;
+                case "btnTile": listView1.View = View.Tile; break;
             }
         }
 
-        
+
 
         private void btnAddList2_Click(object sender, EventArgs e)
         {
@@ -367,17 +368,21 @@ namespace _12.Hafta_02._05._24_
 
         #endregion
 
+
         #region ExampleGroupingFileSection
 
-        // Örnek henüz düzgün çalışmıyor, hata verebilir!!!
-
+        // Örnek tamamlandı, sorunla karşılaşırsanız
+        //          github.com/selcukdinc/gorsel-programlama/issues
+        //          adrensinden yeni bir başlık açıp, detaylı geridönüş verirseniz çok sevinirim...
+        
+        ListViewGroup[] grupDizi;
         private void btnGroupLoc_Click(object sender, EventArgs e)
         {
             listView3.Clear();
+            listView3.Groups.Clear();
             FolderBrowserDialog fbDialog = new FolderBrowserDialog();
             if(fbDialog.ShowDialog() == DialogResult.OK)
             {
-                
                 listView3.LargeImageList = ımageList1;
                 listView3.SmallImageList = ımageList2;
                 int itemCnt = 0, groupCnt = 0;
@@ -396,38 +401,153 @@ namespace _12.Hafta_02._05._24_
                 ColumnHeader[] basliklar = { pDosyaAdi, pUzanti };
                 listView3.Columns.AddRange(basliklar);
 
-                /*
-                    ColumnHeader[] basliklar = { pAdi, pSoyadi , pId};
-                    listView2.Columns.AddRange(basliklar);
-                 */
-
-                ListViewGroup group1 = new ListViewGroup("Grup1", HorizontalAlignment.Right);
-                ListViewGroup group2 = new ListViewGroup("Grup2", HorizontalAlignment.Center);
-                ListViewGroup group3 = new ListViewGroup("Grup3", HorizontalAlignment.Left);
-
-                ListViewGroup[] gruplar = { group1, group2, group3 };
-                listView3.Groups.AddRange(gruplar);
-
-                foreach (var item in Directory.GetFiles(fbDialog.SelectedPath))
+                foreach (var item in Directory.GetFiles(fbDialog.SelectedPath)) // seçilen konumdaki dosyaların her biri için dönecek bir döngü içine giriyoruz
                 {
-                    //item.LastIndexOf('.')
-                    //item.Substring(item.LastIndexOf('.'));
-                    string dosyaAdi = item.Substring(item.LastIndexOf('\\') + 1);
-                    dosyaAdi = dosyaAdi.Remove(dosyaAdi.LastIndexOf('.'));
-                    string dosyaUzanti = item.Substring(item.LastIndexOf('.'));
+                    /*
+                                    [temel mantık dosya adlarının ve uzantıların arasında kalan noktaya dayanıyor]
+                                    ['gorse.lPro.gramla.ma.txt' adında bir dosyamız dahi olsa son nokta her zaman uzantıdan önceki nokta olur]
+                                     
+                                     Directory.GetFiles(fbDialog.SelectedPath) 
+                                                                                bize 
+                                            'C:\Users\selcu\Masaüstü\testFolder\sampleText.txt' 
+                                                                                        gibi bir sonuç verir
+                                     
+                                     burdada '\' karakterinin son index'ini alır ve sonrasını saklarsak dosyanın ismini elde etmiş oluruz
+                                    .lastIndexOf('.') ile noktamızın index'ini belirleriz, bundan sonrasını sakladığımızda dosyanın uzantısını elde etmiş oluruz
+                     */
+                    string dosyaAdi = item.Substring(item.LastIndexOf('\\') + 1);// dosya adı ve uzantısı beraber seçilir
+                           dosyaAdi = dosyaAdi.Remove(dosyaAdi.LastIndexOf('.'));// burda sadece dosyanın adını istediğimiz için uzantısını kaldırıyoruz
+                    
+                    string dosyaUzanti = item.Substring(item.LastIndexOf('.')); // son noktadan sonraki kalan kısmın saklanmasını istiyoruz
+                    
                     string[] sira = { dosyaAdi, dosyaUzanti };
+                    
                     ListViewItem itemTemp = new ListViewItem(sira);
                     listView3.Items.Add(itemTemp);
-                    ListViewGroup groupTemp = new ListViewGroup($"{dosyaUzanti}");
-                    listView3.Groups.IndexOf(groupTemp);
-                    listView3.Groups.Add(groupTemp);
-                    listView3.Items[itemCnt].Group = listView3.Groups[groupCnt];
-                    if (listView3.Groups.Contains(groupTemp) == false)
-                        groupCnt++;
-                        
+                    int grupIndex = -1; // grupIndex'i -1 yapma sebebimiz ilk başta ListView içinde tanımlı grup olmaması, yeni bir grup oluşturulması gerekiyor
+                    if (groupCnt != 0)// Chat gpt 3.5'in cevabı:
+                        foreach (ListViewGroup group in listView3.Groups) // ekli olan Grup elemanlarının içine tek tek bak
+                            if (group.Header == $"{dosyaUzanti}") // dosyanın uzantısı herhangi bir grup başlığıyla uyuşuyorsa (daha önceden böyle bir grup oluşturulmuşsa) komut bloğunu çalıştır
+                                grupIndex = listView3.Groups.IndexOf(group); // grupIndex'i daha önceden oluşturulmuş grupIndexine ayarla
+
+                    if(grupIndex > -1)// grupIndex farklı bir değerse (daha önceden böyle bir grup oluşturulmuşsa) komut satırını çalıştır
+                        listView3.Items[itemCnt].Group = listView3.Groups[grupIndex];//daha önceden oluşturulmuş grup ile aynı uzantıya sahipsin, o gruba katılmalısın.
+                    else // Daha önceden bu uzantıya sahip bir grup oluşturulmamış, yeni grup oluştur
+                    {
+                        Array.Resize(ref grupDizi, groupCnt + 1);// ' ListViewGroup[] grupDizi;' diye global bir değişken methodun hemen üstüne tanımlandı ve şimdi yeni eleman için yeni bir alan açılıyor 
+                        grupDizi[groupCnt] = new ListViewGroup($"{dosyaUzanti}", HorizontalAlignment.Right); // grupDizi'sinin yeni elemanı tanımlanıyor
+                        listView3.Groups.Add(grupDizi[groupCnt]);// yeni grupDizi elemanı ekleniyor
+                        listView3.Items[itemCnt].Group = listView3.Groups[groupCnt];// daha önceden tanımlanmamış uzantıya sahip dosya şimdi yeni oluşturulmuş grupDizi'sinin yeni elemanına tanımlanıyor
+                        groupCnt++; // grupDizi'ye yeni bir eleman eklendiği için sayısının tutulması gerekiyor, [grupSayacı = grpCnt] bir arttırılarak sonraki döngülere hazır hale geliyor
+                    }
+
+                    itemCnt++; // [itemSayısı = itemCnt] İtem sayısı arttırılıyor, (item sayısının takibine devam ediliyor)
+                    
                 }
                 listView3.View = View.Details;
             }
+        }
+
+
+
+        #endregion
+
+        #region ExampleRegedit
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex == 4)
+            {
+                tvReg.Nodes.Clear();
+                string[] suruculer = Directory.GetLogicalDrives();
+                foreach (string s in suruculer)
+                    tvReg.Nodes.Add(s);
+                
+            }
+        }
+        ListViewGroup[] grupDiziV2;
+        private void tvReg_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            lvReg.Clear();
+            lvReg.Groups.Clear();
+            lvReg.LargeImageList = ımageList1;
+            lvReg.SmallImageList = ımageList2;
+            string yol = tvReg.SelectedNode.Text;
+            int itemCnt = 0, groupCnt = 0;
+            ColumnHeader pDosyaAdi = new ColumnHeader()
+            {
+                Text = "Dosya Adı",
+                Width = 200,
+                ImageIndex = 0
+            };
+            ColumnHeader pUzanti = new ColumnHeader()
+            {
+                Text = "Dosya Uzantısı",
+                Width = 150,
+                ImageIndex = 1
+            };
+            ColumnHeader[] basliklar = { pDosyaAdi, pUzanti };
+            lvReg.Columns.AddRange(basliklar);
+            if (e.Node.FirstNode == null)
+            try
+            {
+                string[] dosyalar = Directory.GetFiles(yol);
+                string[] klasorler = Directory.GetDirectories(yol);
+
+                foreach (string item in dosyalar)
+                {
+                    e.Node.Nodes.Add(item);
+                    
+                    string dosyaAdi = item.Substring(item.LastIndexOf('\\') + 1);
+                    dosyaAdi = dosyaAdi.Remove(dosyaAdi.LastIndexOf('.'));
+
+                    string dosyaUzanti = item.Substring(item.LastIndexOf('.'));
+
+                    string[] sira = { dosyaAdi, dosyaUzanti };
+
+                    ListViewItem itemTemp = new ListViewItem(sira);
+                    lvReg.Items.Add(itemTemp);
+                    int grupIndex = -1;
+                    if (groupCnt != 0)
+                        foreach (ListViewGroup group in lvReg.Groups)
+                            if (group.Header == $"{dosyaUzanti}")
+                                grupIndex = lvReg.Groups.IndexOf(group);
+
+                    if (grupIndex > -1)
+                        lvReg.Items[itemCnt].Group = lvReg.Groups[grupIndex];
+                    else
+                    {
+                        Array.Resize(ref grupDiziV2, groupCnt + 1);
+                        grupDiziV2[groupCnt] = new ListViewGroup($"{dosyaUzanti}", HorizontalAlignment.Right);
+                        lvReg.Groups.Add(grupDiziV2[groupCnt]);
+                        lvReg.Items[itemCnt].Group = lvReg.Groups[groupCnt];
+                        groupCnt++;
+                    }
+
+                    itemCnt++;
+
+                }
+
+                foreach (string s in klasorler)
+                {
+                    e.Node.Nodes.Add(s);   
+                }
+                    
+                e.Node.Expand();
+            }
+            catch (Exception)
+            {
+                try
+                {
+                    System.Diagnostics.Process.Start(yol);
+                }
+                catch (Exception)
+                {
+                    ;
+                }
+            }
+            lvReg.View = View.Details;
+
 
         }
 
