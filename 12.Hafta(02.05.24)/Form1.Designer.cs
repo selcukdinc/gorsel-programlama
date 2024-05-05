@@ -68,7 +68,23 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tvReg = new System.Windows.Forms.TreeView();
+            this.ımageList4 = new System.Windows.Forms.ImageList(this.components);
             this.lvReg = new System.Windows.Forms.ListView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.lblTargetFolder = new System.Windows.Forms.Label();
+            this.lblSrcFolder = new System.Windows.Forms.Label();
+            this.lblCPTarget = new System.Windows.Forms.Label();
+            this.lblCPSource = new System.Windows.Forms.Label();
+            this.clbCPTarget = new System.Windows.Forms.CheckedListBox();
+            this.btnCPCopy = new System.Windows.Forms.Button();
+            this.btnCPTarget = new System.Windows.Forms.Button();
+            this.btnCPSource = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.clbCPSource = new System.Windows.Forms.CheckedListBox();
+            this.lblKopyalananDosya = new System.Windows.Forms.Label();
+            this.lblIlerleme = new System.Windows.Forms.Label();
+            this.lblDurum = new System.Windows.Forms.Label();
+            this.pbIlerleme = new System.Windows.Forms.ProgressBar();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +95,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.boslukLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ımageList4 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -87,6 +102,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +114,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
@@ -512,6 +529,13 @@
             this.tvReg.TabIndex = 5;
             this.tvReg.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvReg_AfterSelect);
             // 
+            // ımageList4
+            // 
+            this.ımageList4.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList4.ImageStream")));
+            this.ımageList4.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList4.Images.SetKeyName(0, "folderClose.png");
+            this.ımageList4.Images.SetKeyName(1, "folderOpen.png");
+            // 
             // lvReg
             // 
             this.lvReg.Dock = System.Windows.Forms.DockStyle.Right;
@@ -521,6 +545,158 @@
             this.lvReg.Size = new System.Drawing.Size(621, 486);
             this.lvReg.TabIndex = 4;
             this.lvReg.UseCompatibleStateImageBehavior = false;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.lblTargetFolder);
+            this.tabPage6.Controls.Add(this.lblSrcFolder);
+            this.tabPage6.Controls.Add(this.lblCPTarget);
+            this.tabPage6.Controls.Add(this.lblCPSource);
+            this.tabPage6.Controls.Add(this.clbCPTarget);
+            this.tabPage6.Controls.Add(this.btnCPCopy);
+            this.tabPage6.Controls.Add(this.btnCPTarget);
+            this.tabPage6.Controls.Add(this.btnCPSource);
+            this.tabPage6.Controls.Add(this.label2);
+            this.tabPage6.Controls.Add(this.clbCPSource);
+            this.tabPage6.Controls.Add(this.lblKopyalananDosya);
+            this.tabPage6.Controls.Add(this.lblIlerleme);
+            this.tabPage6.Controls.Add(this.lblDurum);
+            this.tabPage6.Controls.Add(this.pbIlerleme);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(941, 513);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Copy Progress";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // lblTargetFolder
+            // 
+            this.lblTargetFolder.AutoSize = true;
+            this.lblTargetFolder.Location = new System.Drawing.Point(631, 319);
+            this.lblTargetFolder.Name = "lblTargetFolder";
+            this.lblTargetFolder.Size = new System.Drawing.Size(75, 13);
+            this.lblTargetFolder.TabIndex = 14;
+            this.lblTargetFolder.Text = "Hedef Dosya: ";
+            // 
+            // lblSrcFolder
+            // 
+            this.lblSrcFolder.AutoSize = true;
+            this.lblSrcFolder.Location = new System.Drawing.Point(131, 319);
+            this.lblSrcFolder.Name = "lblSrcFolder";
+            this.lblSrcFolder.Size = new System.Drawing.Size(82, 13);
+            this.lblSrcFolder.TabIndex = 13;
+            this.lblSrcFolder.Text = "Kaynak Dosya: ";
+            // 
+            // lblCPTarget
+            // 
+            this.lblCPTarget.AutoSize = true;
+            this.lblCPTarget.ForeColor = System.Drawing.Color.Tomato;
+            this.lblCPTarget.Location = new System.Drawing.Point(162, 399);
+            this.lblCPTarget.Name = "lblCPTarget";
+            this.lblCPTarget.Size = new System.Drawing.Size(87, 13);
+            this.lblCPTarget.TabIndex = 12;
+            this.lblCPTarget.Text = "Hedef: Seçilmedi";
+            // 
+            // lblCPSource
+            // 
+            this.lblCPSource.AutoSize = true;
+            this.lblCPSource.ForeColor = System.Drawing.Color.Tomato;
+            this.lblCPSource.Location = new System.Drawing.Point(158, 380);
+            this.lblCPSource.Name = "lblCPSource";
+            this.lblCPSource.Size = new System.Drawing.Size(94, 13);
+            this.lblCPSource.TabIndex = 11;
+            this.lblCPSource.Text = "Kaynak: Seçilmedi";
+            // 
+            // clbCPTarget
+            // 
+            this.clbCPTarget.FormattingEnabled = true;
+            this.clbCPTarget.Location = new System.Drawing.Point(506, 19);
+            this.clbCPTarget.Name = "clbCPTarget";
+            this.clbCPTarget.Size = new System.Drawing.Size(427, 289);
+            this.clbCPTarget.TabIndex = 10;
+            // 
+            // btnCPCopy
+            // 
+            this.btnCPCopy.Location = new System.Drawing.Point(487, 452);
+            this.btnCPCopy.Name = "btnCPCopy";
+            this.btnCPCopy.Size = new System.Drawing.Size(119, 23);
+            this.btnCPCopy.TabIndex = 9;
+            this.btnCPCopy.Text = "Kopyala";
+            this.btnCPCopy.UseVisualStyleBackColor = true;
+            this.btnCPCopy.Click += new System.EventHandler(this.btnCPCopy_Click);
+            // 
+            // btnCPTarget
+            // 
+            this.btnCPTarget.Location = new System.Drawing.Point(506, 314);
+            this.btnCPTarget.Name = "btnCPTarget";
+            this.btnCPTarget.Size = new System.Drawing.Size(119, 23);
+            this.btnCPTarget.TabIndex = 8;
+            this.btnCPTarget.Text = "Hedef Konum";
+            this.btnCPTarget.UseVisualStyleBackColor = true;
+            this.btnCPTarget.Click += new System.EventHandler(this.btnCPTarget_Click);
+            // 
+            // btnCPSource
+            // 
+            this.btnCPSource.Location = new System.Drawing.Point(6, 314);
+            this.btnCPSource.Name = "btnCPSource";
+            this.btnCPSource.Size = new System.Drawing.Size(119, 23);
+            this.btnCPSource.TabIndex = 7;
+            this.btnCPSource.Text = "Kaynak Konum";
+            this.btnCPSource.UseVisualStyleBackColor = true;
+            this.btnCPSource.Click += new System.EventHandler(this.btnCPSource_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Kopyalanacak Dosyalar";
+            // 
+            // clbCPSource
+            // 
+            this.clbCPSource.FormattingEnabled = true;
+            this.clbCPSource.Location = new System.Drawing.Point(6, 19);
+            this.clbCPSource.Name = "clbCPSource";
+            this.clbCPSource.Size = new System.Drawing.Size(427, 289);
+            this.clbCPSource.TabIndex = 5;
+            this.clbCPSource.SelectedIndexChanged += new System.EventHandler(this.clbCPSource_SelectedIndexChanged);
+            // 
+            // lblKopyalananDosya
+            // 
+            this.lblKopyalananDosya.AutoSize = true;
+            this.lblKopyalananDosya.Location = new System.Drawing.Point(312, 374);
+            this.lblKopyalananDosya.Name = "lblKopyalananDosya";
+            this.lblKopyalananDosya.Size = new System.Drawing.Size(102, 13);
+            this.lblKopyalananDosya.TabIndex = 3;
+            this.lblKopyalananDosya.Text = "Kopyalanan Dosya: ";
+            // 
+            // lblIlerleme
+            // 
+            this.lblIlerleme.AutoSize = true;
+            this.lblIlerleme.Location = new System.Drawing.Point(312, 433);
+            this.lblIlerleme.Name = "lblIlerleme";
+            this.lblIlerleme.Size = new System.Drawing.Size(66, 13);
+            this.lblIlerleme.TabIndex = 2;
+            this.lblIlerleme.Text = "İlerleme : 0%";
+            // 
+            // lblDurum
+            // 
+            this.lblDurum.AutoSize = true;
+            this.lblDurum.Location = new System.Drawing.Point(312, 457);
+            this.lblDurum.Name = "lblDurum";
+            this.lblDurum.Size = new System.Drawing.Size(144, 13);
+            this.lblDurum.TabIndex = 1;
+            this.lblDurum.Text = "durum: x/x dosya tamamlandı";
+            // 
+            // pbIlerleme
+            // 
+            this.pbIlerleme.Location = new System.Drawing.Point(312, 399);
+            this.pbIlerleme.Name = "pbIlerleme";
+            this.pbIlerleme.Size = new System.Drawing.Size(294, 23);
+            this.pbIlerleme.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -590,13 +766,6 @@
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(379, 17);
             this.toolStripStatusLabel2.Text = "Teknoloji Fakültesi - EEM - Görsel Programlama - 12. Hafta - 03.05.2024";
             // 
-            // ımageList4
-            // 
-            this.ımageList4.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList4.ImageStream")));
-            this.ımageList4.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList4.Images.SetKeyName(0, "folderClose.png");
-            this.ımageList4.Images.SetKeyName(1, "folderOpen.png");
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -617,6 +786,8 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -677,6 +848,21 @@
         private System.Windows.Forms.TreeView tvReg;
         private System.Windows.Forms.ListView lvReg;
         private System.Windows.Forms.ImageList ımageList4;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Label lblIlerleme;
+        private System.Windows.Forms.Label lblDurum;
+        private System.Windows.Forms.ProgressBar pbIlerleme;
+        private System.Windows.Forms.Label lblKopyalananDosya;
+        private System.Windows.Forms.CheckedListBox clbCPTarget;
+        private System.Windows.Forms.Button btnCPCopy;
+        private System.Windows.Forms.Button btnCPTarget;
+        private System.Windows.Forms.Button btnCPSource;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckedListBox clbCPSource;
+        private System.Windows.Forms.Label lblCPTarget;
+        private System.Windows.Forms.Label lblCPSource;
+        private System.Windows.Forms.Label lblSrcFolder;
+        private System.Windows.Forms.Label lblTargetFolder;
     }
 }
 

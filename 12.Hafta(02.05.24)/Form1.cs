@@ -20,15 +20,46 @@ namespace _12.Hafta_02._05._24_
             InitializeComponent();
         }
 
+        
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(4);
+            tabControl1.SelectTab(5);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             statusStrip1.GripStyle = ToolStripGripStyle.Hidden;
             //btnGroupLoc.Enabled = false;
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //if (tabControl1.SelectedIndex == 4)
+            //{
+            //    tvReg.Nodes.Clear();
+            //    string[] suruculer = Directory.GetLogicalDrives();
+            //    foreach (string s in suruculer)
+            //        tvReg.Nodes.Add(s);
+
+            //}
+
+            switch (tabControl1.SelectedIndex)
+            {
+                case 4:
+                    tvReg.Nodes.Clear();
+                    string[] suruculer = Directory.GetLogicalDrives();
+                    foreach (string s in suruculer)
+                    tvReg.Nodes.Add(s);
+                    
+                    break;
+                
+                case 5:
+                    reset();
+                    break;
+                default:
+                    break;
+            }
         }
 
         #region TreeViewSection
@@ -170,6 +201,7 @@ namespace _12.Hafta_02._05._24_
         #endregion
 
 
+        
         #region ListViewSection
 
         Random R = new Random();
@@ -327,6 +359,7 @@ namespace _12.Hafta_02._05._24_
         #endregion
 
         
+        
         #region FolderDialog.CheckedListSection
         
 
@@ -339,6 +372,7 @@ namespace _12.Hafta_02._05._24_
                 clbVeriler.Items.AddRange(Directory.GetFiles(fbDialog.SelectedPath));
             }
         }
+
         string yeniKonum;
 
         private void btnTargetLoc_Click(object sender, EventArgs e)
@@ -369,6 +403,7 @@ namespace _12.Hafta_02._05._24_
         #endregion
 
 
+        
         #region ExampleGroupingFileSection
 
         // Örnek tamamlandı, sorunla karşılaşırsanız
@@ -452,19 +487,10 @@ namespace _12.Hafta_02._05._24_
 
         #endregion
 
+        
+        
         #region ExampleRegedit
 
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (tabControl1.SelectedIndex == 4)
-            {
-                tvReg.Nodes.Clear();
-                string[] suruculer = Directory.GetLogicalDrives();
-                foreach (string s in suruculer)
-                    tvReg.Nodes.Add(s);
-                
-            }
-        }
         ListViewGroup[] grupDiziV2;
         private void tvReg_AfterSelect(object sender, TreeViewEventArgs e)
         {
@@ -547,13 +573,173 @@ namespace _12.Hafta_02._05._24_
                 }
             }
             lvReg.View = View.Details;
-
-
         }
 
-        #endregion
-    }
 
+
+
+
+
+        #endregion
+
+
+
+
+        #region progressbarExample
+
+        private void clbCPSource_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = clbCPSource.SelectedIndex;
+            if (clbCPSource.GetItemChecked(index))
+                clbCPSource.SetItemCheckState(index, CheckState.Unchecked);
+            else
+                clbCPSource.SetItemCheckState(index, CheckState.Checked);
+        }
+
+        private void reset()
+        {
+            lblDurum.Text = "durum: kopyalama işlemi başlatılmadı";
+            lblIlerleme.Text = "İlerleme : kopyalama işlemi başlatılmadı";
+            lblKopyalananDosya.Text = "Kopyalanan Dosya: kopyalama işlemi başlatılmadı";
+            pbIlerleme.Value = 0;
+            labelChanger(labelType.Source, false, "");
+            labelChanger(labelType.Target, false, "");
+            clbCPSource.Items.Clear();
+            clbCPTarget.Items.Clear();
+        }
+
+        enum labelType
+        {
+            Target, Source
+        }
+
+        bool ltTargetBoool = false, ltSourceBool = false;
+        string newLocation;
+        
+        private void labelChanger(labelType lt, bool status, string path)
+        {
+            string folderName = path.ToString().Substring(path.ToString().LastIndexOf('\\') + 1);
+            switch (lt)
+            {
+                case labelType.Target:
+                    if (status)
+                    {
+                        lblCPTarget.Text = "Hedef: Seçildi";
+                        lblCPTarget.ForeColor = Color.LightGreen;
+                        lblTargetFolder.Text = $"Hedef Dosya: {folderName}";
+                        ltTargetBoool = true;
+                    }
+                    else
+                    {
+                        lblCPTarget.Text = "Hedef: Seçilmedi";
+                        lblCPTarget.ForeColor = Color.Tomato;
+                        lblTargetFolder.Text = $"Hedef Dosya: seçilmedi";
+                        ltTargetBoool = false;
+                    }
+                    break;
+                case labelType.Source:
+                    if (status)
+                    {
+                        lblCPSource.Text = "Kaynak: Seçildi";
+                        lblCPSource.ForeColor = Color.LightGreen;
+                        lblSrcFolder.Text = $"Kaynak Dosya: {folderName}";
+                        ltSourceBool = true;
+                    }
+                    else
+                    {
+                        lblCPSource.Text = "Kaynak: Seçilmedi";
+                        lblCPSource.ForeColor = Color.Tomato;
+                        lblSrcFolder.Text = $"Kaynak Dosya: seçilmedi";
+                        ltSourceBool = false;
+                    }
+                    break;
+            }
+        }
+
+        private void btnCPSource_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fdb = new FolderBrowserDialog();
+            if(fdb.ShowDialog() == DialogResult.OK)
+            {
+                clbCPSource.Items.Clear();
+                clbCPSource.Items.AddRange(Directory.GetFiles(fdb.SelectedPath));
+                labelChanger(labelType.Source, true, fdb.SelectedPath);
+            }
+        }
+
+        private void btnCPTarget_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fdb = new FolderBrowserDialog();
+            if (fdb.ShowDialog() == DialogResult.OK)
+            {
+                clbCPTarget.Items.Clear();
+                clbCPTarget.Items.AddRange(Directory.GetFiles(fdb.SelectedPath));
+                newLocation = fdb.SelectedPath;
+                labelChanger(labelType.Target, true, newLocation);
+            }
+        }
+
+        private void btnCPCopy_Click(object sender, EventArgs e)
+        {
+            if(ltSourceBool && ltTargetBoool)
+            {
+                int fileValue = clbCPSource.CheckedItems.Count, fileCnt = 0;
+                if (fileValue == 0 || yeniKonum == string.Empty) return;
+                /*
+                    durum: x/x dosya tamamlandı
+                    Kopyalanan Dosya: 
+                    İlerleme : 0%
+                 */
+                int ilerleme = (100 / fileValue) * fileCnt;
+                lblIlerleme.Text = $"İlerleme : {ilerleme}%";
+                lblDurum.Text = $"0/{fileValue} dosya tamamlandı";
+                pbIlerleme.Step = 1;
+                pbIlerleme.Maximum = clbCPSource.CheckedItems.Count;
+                
+                foreach (var item in clbCPSource.CheckedItems)
+                {
+                    if (File.Exists(item.ToString()))
+                    {
+                        string newFile = Path.Combine(newLocation, Path.GetFileName(item.ToString()));
+                        if (File.Exists(newFile)) continue;
+                        File.Copy(item.ToString(), newFile);
+                        
+                        string dosyaAdi = item.ToString().Substring(item.ToString().LastIndexOf('\\') + 1);
+                        lblKopyalananDosya.Text = $"Kopyalanan Dosya: {dosyaAdi}";
+                        ilerleme = (100 / fileValue) * ++fileCnt;
+                        
+                        if (fileCnt == fileValue)
+                            ilerleme = 100;
+                        
+                        lblIlerleme.Text = $"İlerleme : {ilerleme}%";                        
+                        pbIlerleme.Value = fileCnt;
+                        clbCPTarget.Items.Clear();
+                        clbCPTarget.Items.AddRange(Directory.GetFiles(newLocation));
+                        lblDurum.Text = $"{fileCnt}/{fileValue} dosya tamamlandı";
+                        MessageBox.Show($"ilerleme: {ilerleme}%");
+                        
+                    }
+                }
+
+                MessageBox.Show("Kopyalama işlemi tamamlandı", "İşlem Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblDurum.Text = "durum: kopyalama işlemi tamamlandı";
+                lblIlerleme.Text = "İlerleme : kopyalama işlemi tamamlandı";
+                lblKopyalananDosya.Text = "Kopyalanan Dosya: kopyalama işlemi tamamlandı";
+                //Process.Start(newLocation);
+            }
+            else
+            {
+                if (!ltSourceBool)
+                    MessageBox.Show("Kaynak seçmeden kopyalama işlemi gerçekleştirilemez", "Kaynak Seçilmedi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                else if (!ltTargetBoool)
+                    MessageBox.Show("Hedef seçilmeden kopyalama işlemi gerçekleştirilemez", "Hedef Seçilmedi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        
+        #endregion
+    
+    
+    }
 }
 
 /*
