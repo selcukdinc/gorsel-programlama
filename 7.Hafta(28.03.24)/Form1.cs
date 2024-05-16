@@ -254,7 +254,7 @@ namespace _7.Hafta_28._03._24_
                 lbDogrula.Items.Add(tbDogrula.Text);
                 tbDogrula.Text = "";
             }
-    }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {

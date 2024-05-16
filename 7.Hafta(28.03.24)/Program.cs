@@ -16,7 +16,7 @@ namespace _7.Hafta_28._03._24_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new anaMenu());
 
             /*
              * 7.Haftanın konusu: Listbox

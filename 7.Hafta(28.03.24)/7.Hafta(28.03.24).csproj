@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="anaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaMenu.Designer.cs">
+      <DependentUpon>anaMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odev1.Designer.cs">
+      <DependentUpon>Odev1.cs</DependentUpon>
     </Compile>
     <Compile Include="Odev2.cs">
       <SubType>Form</SubType>
@@ -58,13 +70,28 @@
     <Compile Include="Odev2.Designer.cs">
       <DependentUpon>Odev2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Odev3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odev3.Designer.cs">
+      <DependentUpon>Odev3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="anaMenu.resx">
+      <DependentUpon>anaMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Odev1.resx">
+      <DependentUpon>Odev1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Odev2.resx">
       <DependentUpon>Odev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odev3.resx">
+      <DependentUpon>Odev3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

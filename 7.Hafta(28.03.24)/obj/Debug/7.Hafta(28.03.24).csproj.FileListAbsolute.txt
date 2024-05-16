@@ -9,3 +9,6 @@ C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28.03.24)\obj\Debug\7.Hafta(28.03.24).exe
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28.03.24)\obj\Debug\7.Hafta(28.03.24).pdb
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28.03.24)\obj\Debug\_7.Hafta_28._03._24_.Odev2.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28.03.24)\obj\Debug\_7.Hafta_28._03._24_.Odev1.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28.03.24)\obj\Debug\_7.Hafta_28._03._24_.Odev3.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\7.Hafta(28.03.24)\obj\Debug\_7.Hafta_28._03._24_.anaMenu.resources
