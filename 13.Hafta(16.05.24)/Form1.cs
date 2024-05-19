@@ -86,11 +86,23 @@ namespace _13.Hafta_16._05._24_
         private void button3_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(dataGridView1.SelectedRows.Count.ToString());
-            for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+            
+            // Çözüm 1
+            //for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+            //{
+            //    dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[i].Index);
+            //    button3.PerformClick();
+            //}
+
+
+            //çözüm 2
+            while (dataGridView1.SelectedRows.Count > 0)
             {
-                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[i].Index);
+                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
             }
-         
+            
         }
+
+
     }
 }

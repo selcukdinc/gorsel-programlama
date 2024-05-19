@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\13.hafta(16.05.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\13.hafta(16.05.24)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\13.hafta(16.05.24)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\odev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:odev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\odev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:odev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\13.hafta(16.05.24)\\excelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:excelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|c:\\users\\selcu\\masa\u00FCst\u00FC\\workallday\\eemuh\\ii. yy\\g\u00F6rsel programlama\\13.hafta(16.05.24)\\odev1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47854C99-C24F-4C7A-9F9A-0184EA05C158}|13.Hafta(16.05.24).csproj|solutionrelative:odev1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +38,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAMAAAA",
+              "DocumentIndex": 6,
+              "Title": "Odev1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Odev1.Designer.cs",
+              "RelativeDocumentMoniker": "Odev1.Designer.cs",
+              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Odev1.Designer.cs",
+              "RelativeToolTip": "Odev1.Designer.cs",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAUwO4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:35:36.64Z",
+              "WhenOpened": "2024-05-19T15:41:43.467Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "excelControl.cs",
+              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\excelControl.cs",
+              "RelativeDocumentMoniker": "excelControl.cs",
+              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\excelControl.cs",
+              "RelativeToolTip": "excelControl.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAGYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T14:55:02.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Odev1.cs",
+              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Odev1.cs",
+              "RelativeDocumentMoniker": "Odev1.cs",
+              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Odev1.cs",
+              "RelativeToolTip": "Odev1.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T20:40:29.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Odev1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Odev1.cs",
+              "RelativeDocumentMoniker": "Odev1.cs",
+              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Odev1.cs [Design]",
+              "RelativeToolTip": "Odev1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T20:35:08.227Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -45,7 +99,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAUwFgAAAAgAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAGAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:32:05.524Z",
               "EditorCaption": ""
@@ -53,6 +107,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:35:36.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\selcu\\Masa\u00FCst\u00FC\\WorkAllDay\\EEMuh\\II. YY\\G\u00F6rsel Programlama\\13.Hafta(16.05.24)\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

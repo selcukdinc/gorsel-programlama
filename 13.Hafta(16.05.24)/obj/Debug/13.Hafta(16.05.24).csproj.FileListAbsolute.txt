@@ -8,3 +8,4 @@ C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\13.Hafta(1
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\13.Hafta(16.05.24)\obj\Debug\13.Hafta(16.05.24).csproj.CoreCompileInputs.cache
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\13.Hafta(16.05.24)\obj\Debug\13.Hafta(16.05.24).exe
 C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\13.Hafta(16.05.24)\obj\Debug\13.Hafta(16.05.24).pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\13.Hafta(16.05.24)\obj\Debug\_13.Hafta_16._05._24_.Odev1.resources

@@ -27,10 +27,10 @@ namespace _13.Hafta_16._05._24_
                 
             ödev
                 Excel benzeri bir uygulama
+                
                 - A-Z otomatik devamı gelecek 
             
-        
-            seçilen satır ve sütunu silme
+                seçilen satır ve sütunu silme
          
             
          */
