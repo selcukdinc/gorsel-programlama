@@ -74,13 +74,28 @@ namespace _13.Hafta_16._05._24_
         
         }
 
+        /*
+         
+            //MessageBox.Show("satır no:"+e.RowIndex.ToString());
+            //MessageBox.Show("sütun no:" + e.ColumnIndex.ToString());
+            //MessageBox.Show("içerideki veri =" + dataGridView1[e.ColumnIndex,e.RowIndex].Value);
+         
+         */
+
+        int selectedRow = -1, selectedColumn = -1;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show("satır no:"+e.RowIndex.ToString());
-            MessageBox.Show("sütun no:" + e.ColumnIndex.ToString());
-            MessageBox.Show("içerideki veri =" + dataGridView1[e.ColumnIndex,e.RowIndex].Value);
-        
-        
+            selectedRow = e.RowIndex;
+            selectedColumn = e.ColumnIndex;
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (!dataGridView1.Rows[selectedRow].IsNewRow && !dataGridView1.Columns[selectedColumn].IsDataBound)
+            {
+                dataGridView1.Rows.RemoveAt(selectedRow);
+                dataGridView1.Columns.RemoveAt(selectedColumn);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
