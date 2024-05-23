@@ -15,7 +15,7 @@ namespace _1X.Hafta__23._05._24_
     {
         
         static string conStr = "Provider=Microsoft.ACE.OLEDB.12.0;" +
-            "Data Source=" + @"C:\Users\selcu\Masaüstü" + "\\normalOgretim.accdb;";
+            "Data Source=" + Application.StartupPath+ "\\normalOgretim.accdb;";
         //  "Jet OLEDB:Database Password=4444";
 
         OleDbConnection baglanti = new OleDbConnection(conStr);
