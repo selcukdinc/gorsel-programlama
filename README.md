@@ -1,6 +1,6 @@
 <p align = "center">
 
-** 13. Hafta (02.05.2024) ** | Derste İşlenenler
+** 12. Hafta (02.05.2024) ** | Derste İşlenenler
 --|--
 DataGridView, DataSet, DataTable işlendi| İsteyenlerin yapabileceği örnekler <br> excel benzeri bir uygulama, sınırsız satır ve sütun header isimlendirmeleri<br>DataTable ile iki matrisin toplanması 
 
@@ -11,7 +11,7 @@ https://github.com/selcukdinc/gorsel-programlama/assets/149238218/8bdc3028-7ab5-
 
 
 
-** 12. Hafta (02.05.2024) ** | Derste İşlenenler
+** 11. Hafta (02.05.2024) ** | Derste İşlenenler
 --|--
 TreeView, ListView, FolderDialog.CheckedList işlendi | Ödev olarak değil ama örnek olarak yapılabilecek fikirler<br><br>!excel, word, pdf dosyaları gruplanabilir<br><br>!progress bar ile 3 dosya kopyalanıyor, ilerleme progress bar ile gösterilebilir, 2 checkbox ile işlemler yapılabilir<br><br>!regedit yapılabiilir
 ![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/TreeView.png?raw=true)|![alt text](https://github.com/selcukdinc/gorsel-programlama/blob/main/12.Hafta(02.05.24)/images/ListView.png?raw=true)
