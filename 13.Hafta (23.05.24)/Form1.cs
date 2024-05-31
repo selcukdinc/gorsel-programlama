@@ -114,5 +114,23 @@ namespace _1X.Hafta__23._05._24_
             }
             
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int selectedIndex = e.RowIndex;
+            if(e.RowIndex != -1)
+            {
+                string name = dataGridView1.Rows[selectedIndex].Cells[1].Value.ToString();
+                string lastName = dataGridView1.Rows[selectedIndex].Cells[2].Value.ToString();
+                string midTerm = dataGridView1.Rows[selectedIndex].Cells[3].Value.ToString();
+                string final = dataGridView1.Rows[selectedIndex].Cells[4].Value.ToString();
+                txtAdi.Text = name;
+                txtSoyadi.Text = lastName;
+                txtVize.Text = midTerm;
+                txtFinal.Text = final;
+            }
+            
+
+        }
     }
 }
