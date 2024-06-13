@@ -1,0 +1,11 @@
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\bin\Debug\FinalPratik_RandevuSistemi.exe.config
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\bin\Debug\FinalPratik_RandevuSistemi.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\bin\Debug\FinalPratik_RandevuSistemi.pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.csproj.AssemblyReference.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.Form1.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.Form2.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.Properties.Resources.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.csproj.GenerateResource.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.csproj.CoreCompileInputs.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\FinalPratik_RandevuSistemi\obj\Debug\FinalPratik_RandevuSistemi.pdb
