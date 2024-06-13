@@ -23,7 +23,8 @@ namespace _233302071_SelcukDINC_Practice
             veriGoster();
         }
 
-        static string _conString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+ Application.StartupPath +@"\dbStudents.accdb";
+        //static string _conString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+ Application.StartupPath +@"\dbStudents.accdb";
+        static string _conString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+ Application.StartupPath +"\\dbStudents.accdb";
 
         private void veriYaz()
         {

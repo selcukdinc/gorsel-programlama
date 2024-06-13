@@ -17,3 +17,13 @@ C:\Users\selcu\Masaüstü\233302071_SelcukDINC_Practice\233302071_SelcukDINC_Pra
 C:\Users\selcu\Masaüstü\233302071_SelcukDINC_Practice\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.csproj.CoreCompileInputs.cache
 C:\Users\selcu\Masaüstü\233302071_SelcukDINC_Practice\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.exe
 C:\Users\selcu\Masaüstü\233302071_SelcukDINC_Practice\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\bin\Debug\233302071_SelcukDINC_Practice.exe.config
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\bin\Debug\233302071_SelcukDINC_Practice.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\bin\Debug\233302071_SelcukDINC_Practice.pdb
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.csproj.AssemblyReference.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\_233302071_SelcukDINC_Practice.Form1.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\_233302071_SelcukDINC_Practice.Properties.Resources.resources
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.csproj.GenerateResource.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.csproj.CoreCompileInputs.cache
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.exe
+C:\Users\selcu\Masaüstü\WorkAllDay\EEMuh\II. YY\Görsel Programlama\14.Hafta_Lab(30.05.24)\233302071_SelcukDINC_Practice\obj\Debug\233302071_SelcukDINC_Practice.pdb
