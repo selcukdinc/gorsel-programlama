@@ -1,5 +1,7 @@
 <p align = "center">
-
+  
+  [Vize Çalışma Reposu](https://github.com/selcukdinc/VizeCalisma)<br>
+  [Final Çalışma Reposu](https://github.com/selcukdinc/GP_FinalCalisma)<br><br>
 ** 13. Hafta (23.05.2024) ** | Derste İşlenenler
 --|--
 Access veri tabanında .accdb dosya uzantılı db'de CRUD işlemleri yapıldı | DGV'de bir hücreye çift tıklandığında içindeki veri silinsin <br><br> DGV'de bir hücreye tıklandığında textBox'ların otomatik hücrenin bulunduğu satır ile doldurulması
